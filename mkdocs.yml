@@ -1,0 +1,18 @@
+site_name: Big Data
+theme:
+  name: material
+extra_css:
+  - styles/extra.css
+nav:
+  - Inicio: index.md
+  - Contenidos: contenidos.md
+  - Bloque 1. Theoretical concepts of Big Data:
+    - Complexity management: Bloque1_Theoretical_Concepts_of_Big_Data/01_complexity_management.md
+    - Monitoring and performance engineering: Bloque1_Theoretical_Concepts_of_Big_Data/02_monitoring_and_performance_engineering.md
+    - Architectures for Big Data: Bloque1_Theoretical_Concepts_of_Big_Data/03_architectures_for_big_data.md
+  - Bloque 2. Distributed and parallel programming:
+    - Parallel programming: Bloque2_Distributed_and_Parallel_Programming/01_parallel_programming.md
+    - Map reduce: Bloque2_Distributed_and_Parallel_Programming/02_map_reduce.md
+    - Distributed file systems: Bloque2_Distributed_and_Parallel_Programming/03_distributed_file_systems.md
+    - Development of applications for execution on Big Data clusters: Bloque2_Distributed_and_Parallel_Programming/04_app_development_for_big_data_clusters.md
+    - Vector programming: Bloque2_Distributed_and_Parallel_Programming/05_vector_programming.md
