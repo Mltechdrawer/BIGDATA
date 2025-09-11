@@ -4,15 +4,40 @@ theme:
 extra_css:
   - styles/extra.css
 nav:
-  - Inicio: index.md
-  - Contenidos: contenidos.md
-  - Bloque 1. Theoretical concepts of Big Data:
-    - Complexity management: Bloque1_Theoretical_Concepts_of_Big_Data/01_complexity_management.md
-    - Monitoring and performance engineering: Bloque1_Theoretical_Concepts_of_Big_Data/02_monitoring_and_performance_engineering.md
-    - Architectures for Big Data: Bloque1_Theoretical_Concepts_of_Big_Data/03_architectures_for_big_data.md
-  - Bloque 2. Distributed and parallel programming:
-    - Parallel programming: Bloque2_Distributed_and_Parallel_Programming/01_parallel_programming.md
-    - Map reduce: Bloque2_Distributed_and_Parallel_Programming/02_map_reduce.md
-    - Distributed file systems: Bloque2_Distributed_and_Parallel_Programming/03_distributed_file_systems.md
-    - Development of applications for execution on Big Data clusters: Bloque2_Distributed_and_Parallel_Programming/04_app_development_for_big_data_clusters.md
-    - Vector programming: Bloque2_Distributed_and_Parallel_Programming/05_vector_programming.md
+  - Home: index.md
+  - Contents: contents.md
+  - Introduction: introduction.md
+  - Block 1. Theoretical Concepts of Big Data:
+    - Complexity Management:
+      - Experiments: Block1_Theoretical_Concepts_of_Big_Data/Complexity_Management/experiments.md
+      - Lectures: Block1_Theoretical_Concepts_of_Big_Data/Complexity_Management/lectures.md
+      - Applications: Block1_Theoretical_Concepts_of_Big_Data/Complexity_Management/applications.md
+    - Monitoring and Performance Engineering:
+      - Experiments: Block1_Theoretical_Concepts_of_Big_Data/Monitoring_and_Performance_Engineering/experiments.md
+      - Lectures: Block1_Theoretical_Concepts_of_Big_Data/Monitoring_and_Performance_Engineering/lectures.md
+      - Applications: Block1_Theoretical_Concepts_of_Big_Data/Monitoring_and_Performance_Engineering/applications.md
+    - Architectures for Big Data:
+      - Experiments: Block1_Theoretical_Concepts_of_Big_Data/Architectures_for_Big_Data/experiments.md
+      - Lectures: Block1_Theoretical_Concepts_of_Big_Data/Architectures_for_Big_Data/lectures.md
+      - Applications: Block1_Theoretical_Concepts_of_Big_Data/Architectures_for_Big_Data/applications.md
+  - Block 2. Distributed and Parallel Programming:
+    - Parallel Programming:
+      - Experiments: Block2_Distributed_and_Parallel_Programming/Parallel_Programming/experiments.md
+      - Lectures: Block2_Distributed_and_Parallel_Programming/Parallel_Programming/lectures.md
+      - Applications: Block2_Distributed_and_Parallel_Programming/Parallel_Programming/applications.md
+    - Map Reduce:
+      - Experiments: Block2_Distributed_and_Parallel_Programming/Map_Reduce/experiments.md
+      - Lectures: Block2_Distributed_and_Parallel_Programming/Map_Reduce/lectures.md
+      - Applications: Block2_Distributed_and_Parallel_Programming/Map_Reduce/applications.md
+    - Distributed File Systems:
+      - Experiments: Block2_Distributed_and_Parallel_Programming/Distributed_File_Systems/experiments.md
+      - Lectures: Block2_Distributed_and_Parallel_Programming/Distributed_File_Systems/lectures.md
+      - Applications: Block2_Distributed_and_Parallel_Programming/Distributed_File_Systems/applications.md
+    - Application Development for Big Data Clusters:
+      - Experiments: Block2_Distributed_and_Parallel_Programming/Application_Development_for_Big_Data_Clusters/experiments.md
+      - Lectures: Block2_Distributed_and_Parallel_Programming/Application_Development_for_Big_Data_Clusters/lectures.md
+      - Applications: Block2_Distributed_and_Parallel_Programming/Application_Development_for_Big_Data_Clusters/applications.md
+    - Vector Programming:
+      - Experiments: Block2_Distributed_and_Parallel_Programming/Vector_Programming/experiments.md
+      - Lectures: Block2_Distributed_and_Parallel_Programming/Vector_Programming/lectures.md
+      - Applications: Block2_Distributed_and_Parallel_Programming/Vector_Programming/applications.md
