@@ -16,7 +16,7 @@ The learning approach emphasises **individual and team work**, fostering the abi
 **Faculty:**
 
 - José Juan Hernández Cabrera. Practical Sessions Responsible  
-- José Évora Gómez  
+- José Évora Gómez.  
 - María Dolores Afonso Suárez. Course Coordinator  
 
 
