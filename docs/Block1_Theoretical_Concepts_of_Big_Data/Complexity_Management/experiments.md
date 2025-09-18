@@ -44,12 +44,16 @@ Pseudocode of the classic algorithm:
 
 ### Python ###
 
+ **[Python Example](codigos.md#python)**
+
 ![Python](Python.png "Python")
 
 Running time 409.45 seconds with 1024 x 1024 matrices
 
 
 ### Rust ###
+
+ **[Rust Example](codigos.md#rust)**
 
 ![Rust](Rust.png "Rust")
 
@@ -58,13 +62,17 @@ Running time 7.91 second with 1024 x 1024 matrices
 
 ### Java ###
 
+ **[Java Example](codigos.md#java)**
+
+
 ![Java](Java.png "Java")
 
 Running time 7.76 seconds with 1024 x 1024 matrices
-
 <span class="text-red">52x faster than python</span>
 
 ### C ###
+
+ **[C Example](codigos.md#c)**
 
 ![C](C.png "C")
 
@@ -99,5 +107,169 @@ The image represents the TIOBE Programming Community Index, which measures the r
 
 ---
 
-## EXERCISE Complexity Experiment
+## EXERCISE 1 Complexity Experiment
 Given the matrix multiplication algorithm, how would you optimize the storage and management of the input data to improve the efficiency of the computation? Consider both memory access patterns and the use of specialized data structures.
+
+[Solution](Exercise1_Complexity.pdf)
+
+---
+
+## Benchmarking in Complexity Management
+
+![Benchmark](benchmark.png "Benchmark")
+
+**Benchmarking** is the methodology of comparing processes with respect to specific performance measures such as **execution time, memory usage, throughput, or scalability**.  
+
+It allows us to:
+- Evaluate performance under different conditions.  
+- Compare technologies and frameworks.  
+- Identify bottlenecks in computation.  
+- Optimize resources.  
+- Ensure scalability as systems and data grow.  
+
+The benchmarking process generally follows **three key steps**:
+
+1. **Setup the experiment**: Define datasets, algorithms, and parameters.  
+2. **Execution**: Run tests under controlled conditions.  
+3. **Analysis**: Interpret results, compare metrics, and extract insights.  
+
+---
+
+## Case Study Examples
+
+### 1. Performance Evaluation
+
+Imagine a company processing large datasets in real time for **fraud detection**.  
+Using a framework such as **Apache Spark**, benchmarking helps measure **how many transactions per second** the system can handle before latency increases.  
+This determines the optimal configuration to maintain performance while minimizing delays.
+
+<details>
+<summary>💡 Proposal</summary>
+<p>Here’s a real-world case where benchmarking helps: fraud detection with Spark.</p>
+<p>If the system starts to show latency at 50,000 transactions per second, what changes could you propose to improve performance?</p>
+</details>
+
+<details>
+<summary>💡 Reflexion</summary>
+<p>If the system shows latency at 50,000 transactions per second, you could improve performance by:</p>
+<p><strong> Scaling horizontally</strong> → add more nodes or executors to increase parallelism.</p>
+<p><strong> Optimizing resources</strong> → tune memory and CPU allocation.</p>
+<p><strong> Partitioning the data stream</strong> → add more Kafka/Spark partitions for better distribution.</p>
+<p><strong> Reducing state size</strong> → use watermarks or windowing to avoid unbounded memory growth.</p>
+<p><strong> Optimizing the code</strong> → avoid unnecessary shuffles and use efficient libraries.</p>
+<p>In summary, the goal is to increase parallelism, make better use of resources, and control state growth, so the system can process more transactions without adding latency.</p>
+</details>
+
+### 2. Technology Comparison
+
+A research team compares **Apache Hadoop** and **Apache Flink** for batch processing.  
+- Hadoop: More efficient for massive, distributed storage and processing.  
+- Flink: Better for real-time analytics.  
+Benchmarking on workloads like **social media data** helps them select the best tool.
+
+<details>
+<summary>💡 Proposal</summary>
+<p>This is an example of how benchmarking guides technology choice: Hadoop vs Flink.</p>
+<p>If you had to process social media streams, which system would you benchmark and why?</p>
+</details>
+
+<details>
+<summary>💡 Reflexion</summary>
+If I had to process social media streams, I would benchmark Apache Flink because it is optimized for real-time and low-latency stream processing. Hadoop is more efficient for large-scale batch processing, but social media data requires continuous analysis, so Flink would likely perform better for this use case.
+</details>
+
+### 3. Resource Optimization
+
+In cloud environments, resources are billed by usage.  
+Benchmarking reveals how different **CPU/memory configurations** affect the runtime of machine learning tasks.  
+For example, doubling memory but keeping CPU constant may cut processing time by half — optimizing cost-performance balance.
+
+<details>
+<summary>💡 Proposal</summary>
+<p>This is how benchmarking can guide resource allocation in cloud environments.</p>
+<p>If doubling memory halves the processing time, would you consider it cost-effective even if memory is twice as expensive as CPU?</p>
+</details>
+
+<details>
+<summary>💡 Reflexion</summary>
+In order to process social media streams, maybe benchmark Apache Flink is a good choice because it is optimized for real-time and low-latency stream processing. Hadoop is more efficient for large-scale batch processing, but social media data requires continuous analysis, so Flink would likely perform better for this use case.
+</details>
+
+### 4. Identifying Bottlenecks
+
+In ETL (Extract, Transform, Load) workflows, benchmarking can reveal **network transfer speed** as the bottleneck between Amazon S3 and Hadoop clusters.  
+This insight guides investment in better infrastructure or alternative transfer methods.
+
+<details>
+<summary>💡 Proposal</summary>
+<p>Benchmarking can reveal whether the bottleneck lies in the network rather than in storage or compute.</p>
+<p>If your ETL pipeline is slow, how would you use benchmarking to determine whether the problem is CPU, storage, or network?</p>
+</details>
+
+<details>
+<summary>💡 Reflexion</summary>
+To identify bottlenecks in an ETL pipeline, I would run benchmarks that measure the performance of each stage separately—data transfer, storage, and processing. If the results show that network transfer between storage (e.g., S3) and the processing engine (e.g., Hadoop) is significantly slower than computation or storage access, then the network is the bottleneck. This insight helps decide whether to improve network capacity or adjust data transfer methods.
+</details>
+
+### 5. Ensuring Scalability
+
+An online retailer analyzing customer behavior starts with 1M transactions but expects exponential growth.  
+Scalability benchmarks test workloads of 10M, 50M, or 100M transactions to ensure the system scales **without performance degradation**.
+
+<details>
+<summary>💡 Proposal</summary>
+<p>Scalability benchmarking helps companies anticipate growth and ensure that performance remains stable as data volume increases.</p>
+<p>If your dataset grew 100 times larger, how would you benchmark your system to check whether it can scale without performance degradation?</p>
+</details>
+
+<details>
+<summary>💡 Reflexion</summary>
+To benchmark scalability, the dataset size can be gradually increased (e.g., 10x, 50x, 100x) while measuring how the system’s performance changes. If the system maintains acceptable response times and throughput as the data grows, then it scales effectively. Otherwise, the benchmark highlights where improvements in infrastructure or algorithms are required.
+</details>
+
+---
+
+## EXERCISE 2 Complexity Experiment
+Execute the algorithms associated to different methods or programming languages with different datasets (size of the matrix) and extract measures (execution time).
+
+---
+
+## Optimizing Matrix Multiplication
+
+Students are expected to:
+1. **Implement algorithms** for matrix multiplication (naïve and optimized).  
+2. **Execute them** in different languages or frameworks (e.g., Python, Java, C, Rust).  
+3. **Vary dataset size** (matrix dimension) and record metrics (execution time, memory usage).  
+4. **Compare results** across methods.  
+5. **Draw conclusions** about efficiency, scalability, and hardware utilization.
+
+---
+![Time Complexity](timecomplexity.png "Time Complexity")
+
+*Comparison of common time complexities (Big-O). The graph shows how algorithm performance scales with input size, from constant time O(1) to exponential O(2^n), highlighting the dramatic differences in growth rates.*
+
+## Documenting Benchmarks
+
+When reporting experiments, follow a structured format:
+
+**Title**  
+- Clear and concise, e.g. *Benchmarking Matrix Multiplication Algorithms on Big Data Platforms*.  
+
+**Abstract**  
+- Briefly state the **task**, algorithms compared, performance measures, and conclusions.  
+
+**Body**  
+- Describe **setup, methodology, datasets, and tools**.  
+- Provide tables or charts (execution times, speedups, scalability curves).  
+
+**Conclusions**  
+- Summarize key findings.  
+- State **recommendations** for future research or practice.  
+
+**Example Abstract:**  
+We study the behavior of several matrix multiplication algorithms used for large-scale computation. We analyze execution time, memory usage, and scalability. Our experiments provide a reproducible benchmark across a variety of datasets to guide future research in Big Data performance engineering. Based on our results, we recommend combining optimized libraries (BLAS, MKL) with GPU acceleration for the most efficient solutions.
+
+---
+
+<span class="text-blue">*[Scientific Papers](scientificpapers.md)*</span>
+
