@@ -9,6 +9,12 @@
 > *“There are a lot of ways known to do it wrong and which one is right is not clear.”*  
 — James Gosling (1955–)
 
+## Brief Biography  
+James Gosling, born on May 19, 1955, in Calgary, Canada, is a computer scientist widely known as the “father of Java.” He studied computer science at the University of Calgary and later earned a Ph.D. in computer science from Carnegie Mellon University. Gosling joined Sun Microsystems in the 1980s, where he led the development of the Java programming language, officially released in 1995. Java quickly became one of the most influential programming languages in the world due to its portability, security, and “write once, run anywhere” philosophy. Beyond Java, Gosling has contributed to compiler design, operating systems, and software development tools. He has worked at several leading technology companies, including Sun Microsystems, Oracle, Google, and Amazon Web Services.
+
+## The Creation of Java  
+In the early 1990s, Gosling and his team at Sun Microsystems initiated the “Green Project” to develop a language suitable for consumer devices and embedded systems. Gosling designed Java with a strong emphasis on simplicity, object-oriented design, memory management, and platform independence. The language introduced features like automatic garbage collection and a virtual machine (the JVM) that allowed programs to run across different hardware and operating systems. Java’s release in 1995 revolutionized programming by becoming the backbone of enterprise applications, web development, and later Android applications. Today, Java remains one of the most widely used and enduring programming languages, a testament to Gosling’s vision and leadership.
+
 Complexity in computation is not only about algorithms but also about **implementation choices**, **programming languages**, and **hardware utilization**.  
 This experiment explores **matrix multiplication** as a case study to analyze performance differences across programming languages and approaches.
 
