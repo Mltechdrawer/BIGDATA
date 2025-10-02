@@ -38,7 +38,7 @@ Big O notation describes the worst-case scenario, representing the upper limit o
 ![Big  O](BigO_2.png "Big  O")
 
 <details>
-<summary>💡 Details</summary>
+<summary> Details</summary>
 <p>Also called Landau's symbol, is a symbolism used in complexity theory, computer science, and mathematics to describe the asymptotic behavior of functions.</p>
 <p>German mathematician Edmund Landau, who was one of the first to use this type of notation in mathematical analysis, to describe the behaviour of mathematical functions when they tend to infinity.</p>
 </details>
@@ -51,7 +51,7 @@ The execution time does not change with the size of the input.
 ![Big  O](BigO_3.png "Big  O")
 
 <details>
-<summary>💡 Details</summary>
+<summary> Details</summary>
 <p>Constant time complexity (O(1)) because the execution time of the System.out.println statement is independent of the input size.</p>
 </details>
 
@@ -63,7 +63,7 @@ Because the execution time of the `System.out.println` statement is independent 
 ![Big  O](BigO_4.png "Big  O")
 
 <details>
-<summary>💡 Details</summary>
+<summary> Details</summary>
 <p>Constant time complexity (O(1)) because the execution time of the System.out.println statement is independent of the input size.</p>
 </details>
 
@@ -75,7 +75,7 @@ The execution time grows logarithmically as the input size increases.
 ![Big  O](BigO_5.png "Big  O")
 
 <details>
-<summary>💡 Details</summary>
+<summary> Details</summary>
 <p>For an array of size n = 1,000,000, binary search will take roughly log⁡2(1,000,000)≈20 comparisons to find the target.</p>
 </details>
 
@@ -87,7 +87,7 @@ Because at each step, it halves the search space. So, if you double the size of 
 ![Big  O](BigO_6.png "Big  O")
 
 <details>
-<summary>💡 Details</summary>
+<summary> Details</summary>
 <p>Logarithmic Growth: Binary search is logarithmic because at each step, it halves the search space. So if you double the size of the array, the number of steps required to find an element increases only by 1 (since log⁡2(2n)=log⁡2(n)+1\log_2(2n) = \log_2(n) + 1log2​(2n)=log2​(n)+1).</p>
 <p>For example:</p>
 <p> - For an array of size 1,000,000, binary search requires about 20 comparisons.</p>
@@ -111,7 +111,7 @@ If *n* = 1,000,000 (or 2,000,000) the loop runs 1,000,000 (2,000,000) times.
 ![Big  O](BigO_8.png "Big  O")
 
 <details>
-<summary>💡 Details</summary>
+<summary> Details</summary>
 <p> <strong>Why is This O(n) Linear Time Complexity?</strong></p>
 <p>In this example, the for loop runs exactly n times, which means the number of iterations grows linearly with the input size n.</p>
 <p>For example:</p>
@@ -136,7 +136,7 @@ Why is sorting (merge sort) O(n log n)?
 ![Big  O](BigO_10.png "Big  O")
 
 <details>
-<summary>💡 Details</summary>
+<summary> Details</summary>
 <p> <strong>Why is this O(n log n)?</strong></p>
 <p>Sorting an array of n elements using efficient algorithms like Merge Sort or Timsort takes O(n log n) time:</p>
 <p> - The array is divided into smaller subarrays recursively (halving the array size at each step), which takes logarithmic time O(log⁡n)O(\log n)O(logn).</p>
@@ -164,7 +164,7 @@ Why is Bubble Sort O(n²)?
 ![Big  O](BigO_12.png "Big  O")
 
 <details>
-<summary>💡 Details</summary>
+<summary> Details</summary>
 <p> <strong>Why is Bubble sort O(n²)?</strong></p>
 <p>The Bubble Sort algorithm has two nested loops: one that iterates over the array and another that iterates over the unsorted part of the array to compare and swap adjacent elements.</p>
 <p> The outer loop runs n times, and for each iteration of the outer loop, the inner loop also runs n times. This leads to a total of n×n=n² operations. In simple terms, as the input size n grows, the time it takes to sort the array grows quadratically. </p>
@@ -187,7 +187,7 @@ Why is Matrix Multiplication O(n³)?
 ![Big  O](BigO_14.png "Big  O")
 
 <details>
-<summary>💡 Details</summary>
+<summary> Details</summary>
 <p> <strong>Why is This O(n³)?</strong></p>
 <p>Triple Nested Loops: The three nested loops each iterate n times:</p>
 <p> - The outer loop iterates over the rows of matrix AAA. </p>
@@ -215,7 +215,7 @@ Why is Fibonacci Sequence O(2ⁿ)?
 ![Big  O](BigO_16.png "Big  O")
 
 <details>
-<summary>💡 Details</summary>
+<summary> Details</summary>
 <p> <strong>Why is this O(2ⁿ)?</strong></p>
 <p>The total number of calls for fib(n) is close to 2^n, which is why the time complexity is O(2ⁿ).</p>
 <p>Formal Reason:</p>
@@ -236,7 +236,7 @@ Extremely inefficient, grows very quickly, seen in permutation and combinatorial
 Why is Permutation Generation O(n!)? 
 
 <details>
-<summary>💡 Details</summary>
+<summary> Details</summary>
 <p> <strong>Why is Permutation Generation O(n!)?</strong></p>
 <p> - For every element in the list, we generate all permutations of the remaining elements.</p>
 <p> - This results in a recursive process where the time complexity grows factorially as the size of the list increases.</p>
@@ -253,4 +253,4 @@ Big O notation describes the worst-case scenario, representing the upper limit o
 
 ![Big  O](BigO_19.png "Big  O")
 
-**[Exercise](bigO_exercises.md)**
+**[Exercises](bigO_exercises.md)**
