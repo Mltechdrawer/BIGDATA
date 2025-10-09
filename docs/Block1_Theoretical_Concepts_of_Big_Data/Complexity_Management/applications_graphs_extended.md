@@ -32,7 +32,9 @@ Mathematically, these are obtained from the adjacency matrix **A**:
 
 This illustrates how matrix multiplication helps us uncover paths of arbitrary length in a graph, which is extremely useful for analyzing reachability in large-scale networks.
 
-ag_1, ag_2 y ag_3
+![Graph](ApplicationsExtended/ag_1.png "Graph")
+![Graph and Adjacency Matrix](ApplicationsExtended/ag_2.png "Graph and Adjacency Matrix")
+![Length of paths in adjacency matrix multiplications](ApplicationsExtended/ag_3.png "Length of paths in adjacency matrix multiplications")
 
 <details>
 <summary>💡 Specific problem:</summary>

@@ -20,16 +20,21 @@ In Big Data, where datasets may include millions of nodes and billions of connec
 
 ## Applications of graphs across domains
 
-- **Social Networks**: Nodes represent users, and edges represent friendships or follower relationships.  
-- **Transportation Networks**: Nodes are locations (cities, airports), and edges are routes (roads, flights).  
-- **Web Pages**: Nodes are web pages, and edges are hyperlinks between them.  
-- **Computer Networks**: Nodes are devices, and edges are communication links.  
-- **Biological Networks**: Nodes are genes or proteins, and edges are interactions or regulatory relationships.  
-- **Recommendation Systems**: Nodes represent users and items, with edges indicating preferences or ratings.  
-- **Knowledge Graphs**: Nodes represent entities (people, places, things), and edges represent semantic relationships.  
-- **Scheduling Problems**: Nodes represent tasks, and edges represent dependencies.  
+- **Social Networks**: Nodes represent users, and edges represent friendships or follower relationships.  [Example](social_network.md)
+- **Transportation Networks**: Nodes are locations (cities, airports), and edges are routes (roads, flights). [Example](transportation_network.md) 
+- **Web Pages**: Nodes are web pages, and edges are hyperlinks between them. [Example](web_pages.md)   
+- **Computer Networks**: Nodes are devices, and edges are communication links.  [Example](computer_network.md)   
+- **Biological Networks**: Nodes are genes or proteins, and edges are interactions or regulatory relationships.  [Example](biological_network.md)   
+- **Recommendation Systems**: Nodes represent users and items, with edges indicating preferences or ratings.  [Example](recommendation_system.md)   
+- **Knowledge Graphs**: Nodes represent entities (people, places, things), and edges represent semantic relationships. [Example](knowledge_graph.md)  
+- **Scheduling Problems**: Nodes represent tasks, and edges represent dependencies. [Example](scheduling_problem.md) 
 
 ---
+
+[Example](additive_vs_multiplicative.md) 
+
+---
+
 ### Social Networks
 
 **Efficient Relationship Modelling:** Graphs can naturally represent social connections and quickly identify relationships like mutual friends or groups.  
@@ -123,7 +128,7 @@ In Big Data, where datasets may include millions of nodes and billions of connec
 
 ---
 
-[Application Graph Extended](applications_graphs_extended.md)
+<!--[Application Graph Extended](applications_graphs_extended.md)-->
 
 <details>
 <summary> Graph analisys</summary>
