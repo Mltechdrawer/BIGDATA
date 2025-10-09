@@ -16,7 +16,7 @@
     
     
       
-        <title>Other Uses of Matrix Multiplication in Big Data (Beyond Graphs) - Big Data</title>
+        <title>Additive vs. Multiplicative Costs in Graphs - Big Data</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#other-uses-of-matrix-multiplication-in-big-data-beyond-graphs" class="md-skip">
+        <a href="#additive-vs-multiplicative-costs-in-graphs" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Other Uses of Matrix Multiplication in Big Data (Beyond Graphs)
+              Additive vs. Multiplicative Costs in Graphs
             
           </span>
         </div>
@@ -1288,45 +1288,84 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#machine-learning-and-deep-learning" class="md-nav__link">
+  <a href="#1-additive-cost" class="md-nav__link">
     <span class="md-ellipsis">
-      Machine Learning and Deep Learning
+      1. Additive Cost
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Additive Cost">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-multiplicative-cost" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Multiplicative Cost
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Multiplicative Cost">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Comparison
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#natural-language-processing-nlp" class="md-nav__link">
+  <a href="#4-graphical-interpretation" class="md-nav__link">
     <span class="md-ellipsis">
-      Natural Language Processing (NLP)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#image-and-signal-processing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Image and Signal Processing
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#matrix-factorization-in-recommendation-systems" class="md-nav__link">
-    <span class="md-ellipsis">
-      Matrix Factorization in Recommendation Systems
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scientific-simulations-and-bioinformatics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Scientific Simulations and Bioinformatics
+      4. Graphical Interpretation
     </span>
   </a>
   
@@ -1348,70 +1387,121 @@
 
 
 
-<h1 id="other-uses-of-matrix-multiplication-in-big-data-beyond-graphs">Other Uses of Matrix Multiplication in Big Data (Beyond Graphs)</h1>
-<h2 id="machine-learning-and-deep-learning">Machine Learning and Deep Learning</h2>
-<ul>
-<li><strong>Neural network training</strong>: each layer performs matrix multiplication operations (weights × inputs).  </li>
-<li><strong>Example</strong>: in an embedding-based recommendation model, products and users are represented as vectors, and similarity is computed through matrix multiplications. </li>
-</ul>
-<details>
-<summary>Machine Learning and Deep Learning</summary>
-<p><b>Neural network training:</b> each layer performs matrix multiplication between <i>weights</i> and <i>inputs</i> to compute the activations.  
-For example, in a layer with weight matrix <i>W</i> and input vector <i>X</i>, the output is <i>Y = W × X + b</i>, where <i>b</i> is the bias term.</p>
-<p><b>Example:</b> In an embedding-based recommendation model, users and products are represented as vectors in a latent space.  
-If <i>U</i> is the user embedding matrix (each row represents a user) and <i>P</i> is the product embedding matrix (each row a product),  
-the similarity or affinity between users and products is computed as <i>S = U × Pᵀ</i>,  
-where <i>S<sub>ij</sub></i> expresses how much user <i>i</i> is predicted to like product <i>j</i>.</p>
-</details>
-
-<h2 id="natural-language-processing-nlp">Natural Language Processing (NLP)</h2>
-<ul>
-<li><strong>Vector representations</strong> (word embeddings, BERT, transformers): require millions of matrix multiplication operations to compute attention and contextual relationships.  </li>
-<li><strong>Example</strong>: the <em>self-attention</em> mechanism in transformers is based on matrix multiplications between queries, keys, and values.  </li>
-</ul>
-<details>
-<summary>Natural Language Processing (NLP)</summary>
-<p><b>Vector representations:</b> (word embeddings, BERT, transformers) require millions of matrix multiplication operations to compute attention and contextual relationships between tokens. Each word or token is represented as a numerical vector in a high-dimensional space.</p>
-<p><b>Example:</b> In the <i>self-attention</i> mechanism of transformers, three matrices are computed: Queries (Q), Keys (K), and Values (V).  
-The attention scores are calculated through matrix multiplications as follows:  
-<i>Attention(Q, K, V) = softmax((Q × Kᵀ) / √d<sub>k</sub>) × V</i>  
-This allows each token to attend to others according to their contextual relevance, forming the core of models like BERT and GPT.</p>
-</details>
-
-<h2 id="image-and-signal-processing">Image and Signal Processing</h2>
-<ul>
-<li>In computer vision, <strong>convolutions</strong> can be represented as matrix multiplications between an image and filters.  </li>
-<li>In Big Data, this is applied to process large-scale image collections (e.g., facial recognition in massive datasets).</li>
-</ul>
-<details>
-<summary>Image and Signal Processing</summary>
-<p><b>In computer vision,</b> <i>convolutions</i> can be represented as matrix multiplications between an image (a matrix of pixel values) and small filters or kernels.  
-Each convolution operation slides the filter across the image, performing local matrix multiplications to extract features such as edges, colors, or textures.</p>
-<p><b>In Big Data,</b> this approach is used to process large-scale image collections — for instance, in facial recognition systems or automatic image classification across massive datasets.</p>
-</details>
-
-<h2 id="matrix-factorization-in-recommendation-systems">Matrix Factorization in Recommendation Systems</h2>
-<ul>
-<li>Techniques such as <strong>Singular Value Decomposition (SVD)</strong> or <strong>Matrix Factorization</strong> decompose large matrices (users × items) into products of smaller matrices.  </li>
-<li>This allows for uncovering hidden patterns and predicting ratings.  </li>
-</ul>
-<details>
-<summary>Matrix Factorization in Recommendation Systems</summary>
-<p><b>Techniques such as</b> <i>Singular Value Decomposition (SVD)</i> or <i>Matrix Factorization</i> decompose large rating matrices (users × items) into the product of smaller matrices that represent latent features of users and items.</p>
-<p>This allows for uncovering hidden patterns and predicting missing ratings, forming the foundation of modern collaborative filtering methods used in platforms like Netflix and Spotify.</p>
-</details>
-
-<h2 id="scientific-simulations-and-bioinformatics">Scientific Simulations and Bioinformatics</h2>
-<ul>
-<li>In <strong>molecular dynamics, climatology, or genomics</strong>, huge matrices are used to represent interactions.  </li>
-<li>The system’s evolution is simulated through successive matrix multiplications. </li>
-</ul>
-<details>
-<summary>Scientific Simulations and Bioinformatics</summary>
-<p><b>In fields such as</b> <i>molecular dynamics, climatology, or genomics</i>, large matrices are used to represent complex interactions among system components — such as forces between atoms, correlations between genes, or environmental variables.</p>
-<p><b>The system’s evolution</b> is simulated through successive matrix multiplications, which update the state of the model over time.  
-This enables the study of complex phenomena such as protein folding, mutation propagation, or large-scale climate patterns.</p>
-</details>
+<h1 id="additive-vs-multiplicative-costs-in-graphs">Additive vs. Multiplicative Costs in Graphs</h1>
+<h2 id="1-additive-cost">1. Additive Cost</h2>
+<h3 id="definition">Definition</h3>
+<p>In an <strong>additive cost</strong>, the total value of a path is the <strong>sum of the individual costs</strong> of each edge:</p>
+<p><strong>Total Cost (A → C) = A_AB + A_BC</strong></p>
+<p>This model is used when <strong>each step adds an independent cost</strong>, such as:
+- Distance traveled<br />
+- Execution time<br />
+- Energy consumed<br />
+- Accumulated price  </p>
+<h3 id="example">Example</h3>
+<p>Imagine a graph where nodes represent cities and edge weights are distances (in km):</p>
+<table>
+<thead>
+<tr>
+<th>Route</th>
+<th>Cost (km)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A → B</td>
+<td>5</td>
+</tr>
+<tr>
+<td>B → C</td>
+<td>7</td>
+</tr>
+<tr>
+<td>A → C</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>Then, the total additive cost from A to C via B is:</p>
+<p><strong>Cost (A → B → C) = 5 + 7 = 12</strong></p>
+<p>If there are multiple paths, we choose the one with the <strong>minimum total sum</strong> using algorithms such as <strong>Dijkstra</strong> or <strong>Floyd–Warshall</strong>.</p>
+<hr />
+<h2 id="2-multiplicative-cost">2. Multiplicative Cost</h2>
+<h3 id="definition_1">Definition</h3>
+<p>In a <strong>multiplicative cost</strong>, the total value of a path is the <strong>product of the individual costs</strong> (or probabilities, or reliability factors) of each edge:</p>
+<p><strong>Total Cost (A → C) = A_AB × A_BC</strong></p>
+<p>This is used when <strong>each step transforms or attenuates</strong> the effect of the previous one, such as:
+- Success probabilities<br />
+- Transmission coefficients (signal loss or energy)<br />
+- Relationship strength or affinity<br />
+- Growth or decay factors  </p>
+<h3 id="example_1">Example</h3>
+<p>Suppose edge weights represent <strong>probabilities of success</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Route</th>
+<th>Probability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A → B</td>
+<td>0.9</td>
+</tr>
+<tr>
+<td>B → C</td>
+<td>0.8</td>
+</tr>
+<tr>
+<td>A → C</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>Then, the probability of reaching C from A through B is:</p>
+<p><strong>P(A → B → C) = 0.9 × 0.8 = 0.72</strong></p>
+<p>Each step <strong>reduces</strong> the overall probability of success.</p>
+<hr />
+<h2 id="3-comparison">3. Comparison</h2>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Additive Cost</th>
+<th>Multiplicative Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Operation</td>
+<td>Sum (+)</td>
+<td>Product (×)</td>
+</tr>
+<tr>
+<td>Typical Context</td>
+<td>Distance, time, energy</td>
+<td>Probability, reliability, intensity</td>
+</tr>
+<tr>
+<td>Total Behavior</td>
+<td>Increases with each step</td>
+<td>Decreases or amplifies</td>
+</tr>
+<tr>
+<td>Example Algorithms</td>
+<td>Dijkstra, Floyd–Warshall</td>
+<td>Markov models, probabilistic propagation</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-graphical-interpretation">4. Graphical Interpretation</h2>
+<p><strong>Graph 1 (Additive – distances):</strong><br />
+A —(5)— B —(7)— C → total cost = 12  </p>
+<p><strong>Graph 2 (Multiplicative – probabilities):</strong><br />
+A —(0.9)— B —(0.8)— C → total cost = 0.72  </p>
+<p>In the first case, traveling becomes more expensive with each step.<br />
+In the second, success becomes less likely with each step.</p>
 
 
 
