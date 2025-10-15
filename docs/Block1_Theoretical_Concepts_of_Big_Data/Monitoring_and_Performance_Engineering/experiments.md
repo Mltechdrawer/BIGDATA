@@ -28,7 +28,8 @@ Performance can be measured by analyzing execution time under different computat
 - **Case A:** Running time = 1.32 seconds  
 - **Case B:** Running time = 7.76 seconds 
 
-[Matrix Multiply Slow](../../files/Codes/MatrixMultiplySlow.java) 
+[Matrix Multiply Slow](../../files/Codes/MatrixMultiplySlow.java)  
+ 
 [Matrix Multiply Fast](../../files/Codes/MatrixMultiplyFast.java)
 
 The only difference between the two implementations is the **loop order**. This affects how memory is accessed, leading to variations in performance by a factor of up to six. Such behavior arises from **data locality**, a key concept in performance analysis.  
@@ -48,7 +49,7 @@ To optimize cache usage:
 
 Even small changes in loop nesting or traversal order can significantly improve performance without altering the algorithm itself.
 
-[Matrix Multiply Blocked (or Tiling)](/Codes/MatrixMultiplyBlocked.java)  
+[Matrix Multiply Blocked (or Tiling)](../../files/Codes/MatrixMultiplyBlocked.java)  
 
 This implementation demonstrates cache blocking (or tiling), which improves performance by maximizing cache reuse.
 ---
@@ -145,7 +146,7 @@ Real-world matrices often have extremely low densities (e.g., 0.0003% or 2.31%).
 
 As density increases, the amount of computation and storage requirements grow proportionally.
 
-[Dense vs CRS](/Codes/DenseVsCSRSquare.java)  
+[Dense vs CRS](../../files/Codes/DenseVsCSRSquare.java)  
 
 <details>
 <summary> Runing times test</summary>
