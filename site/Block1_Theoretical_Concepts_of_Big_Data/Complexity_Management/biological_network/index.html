@@ -16,7 +16,7 @@
     
     
       
-        <title>Other Uses of Matrix Multiplication in Big Data (Beyond Graphs) - Big Data</title>
+        <title>Example: Adjacency Matrix Multiplication in a Biological Network - Big Data</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#other-uses-of-matrix-multiplication-in-big-data-beyond-graphs" class="md-skip">
+        <a href="#example-adjacency-matrix-multiplication-in-a-biological-network" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Other Uses of Matrix Multiplication in Big Data (Beyond Graphs)
+              Example: Adjacency Matrix Multiplication in a Biological Network
             
           </span>
         </div>
@@ -1288,45 +1288,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#machine-learning-and-deep-learning" class="md-nav__link">
+  <a href="#scenario" class="md-nav__link">
     <span class="md-ellipsis">
-      Machine Learning and Deep Learning
+      Scenario
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#natural-language-processing-nlp" class="md-nav__link">
+  <a href="#adjacency-matrix-a" class="md-nav__link">
     <span class="md-ellipsis">
-      Natural Language Processing (NLP)
+      Adjacency Matrix (A)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#image-and-signal-processing" class="md-nav__link">
+  <a href="#matrix-multiplication-a2-a-a" class="md-nav__link">
     <span class="md-ellipsis">
-      Image and Signal Processing
+      Matrix Multiplication: A² = A × A
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#matrix-factorization-in-recommendation-systems" class="md-nav__link">
+  <a href="#interpretation" class="md-nav__link">
     <span class="md-ellipsis">
-      Matrix Factorization in Recommendation Systems
+      Interpretation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#scientific-simulations-and-bioinformatics" class="md-nav__link">
+  <a href="#biological-insights" class="md-nav__link">
     <span class="md-ellipsis">
-      Scientific Simulations and Bioinformatics
+      Biological Insights
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extensions
     </span>
   </a>
   
@@ -1348,70 +1357,127 @@
 
 
 
-<h1 id="other-uses-of-matrix-multiplication-in-big-data-beyond-graphs">Other Uses of Matrix Multiplication in Big Data (Beyond Graphs)</h1>
-<h2 id="machine-learning-and-deep-learning">Machine Learning and Deep Learning</h2>
+<h1 id="example-adjacency-matrix-multiplication-in-a-biological-network">Example: Adjacency Matrix Multiplication in a Biological Network</h1>
+<h2 id="scenario">Scenario</h2>
+<p>Consider a biological network where nodes represent <strong>genes</strong> (or proteins) and edges represent <strong>regulatory or interaction relationships</strong>.<br />
+We have four genes: A, B, C, and D, with the following known interactions:</p>
 <ul>
-<li><strong>Neural network training</strong>: each layer performs matrix multiplication operations (weights × inputs).  </li>
-<li><strong>Example</strong>: in an embedding-based recommendation model, products and users are represented as vectors, and similarity is computed through matrix multiplications. </li>
+<li>A → B: Gene A activates gene B  </li>
+<li>B → C: Gene B activates gene C  </li>
+<li>C → D: Gene C activates gene D  </li>
+<li>A → D: Gene A also activates gene D directly  </li>
 </ul>
-<details>
-<summary>Machine Learning and Deep Learning</summary>
-<p><b>Neural network training:</b> each layer performs matrix multiplication between <i>weights</i> and <i>inputs</i> to compute the activations.  
-For example, in a layer with weight matrix <i>W</i> and input vector <i>X</i>, the output is <i>Y = W × X + b</i>, where <i>b</i> is the bias term.</p>
-<p><b>Example:</b> In an embedding-based recommendation model, users and products are represented as vectors in a latent space.  
-If <i>U</i> is the user embedding matrix (each row represents a user) and <i>P</i> is the product embedding matrix (each row a product),  
-the similarity or affinity between users and products is computed as <i>S = U × Pᵀ</i>,  
-where <i>S<sub>ij</sub></i> expresses how much user <i>i</i> is predicted to like product <i>j</i>.</p>
-</details>
-
-<h2 id="natural-language-processing-nlp">Natural Language Processing (NLP)</h2>
+<hr />
+<h2 id="adjacency-matrix-a">Adjacency Matrix (A)</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>D</strong></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Each row represents the <strong>regulating gene (source)</strong> and each column represents the <strong>regulated gene (target)</strong>.<br />
+A value of 1 means there is a <strong>direct regulatory interaction</strong> between two genes.</p>
+<hr />
+<h2 id="matrix-multiplication-a2-a-a">Matrix Multiplication: A² = A × A</h2>
+<p>The matrix A² shows <strong>indirect (two-step) interactions</strong> — which genes influence others through an intermediate regulator.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>D</strong></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="interpretation">Interpretation</h2>
 <ul>
-<li><strong>Vector representations</strong> (word embeddings, BERT, transformers): require millions of matrix multiplication operations to compute attention and contextual relationships.  </li>
-<li><strong>Example</strong>: the <em>self-attention</em> mechanism in transformers is based on matrix multiplications between queries, keys, and values.  </li>
+<li>A²₍A,C₎ = 1 → Gene A indirectly influences C through B (A → B → C).  </li>
+<li>A²₍B,D₎ = 1 → Gene B indirectly influences D through C (B → C → D).  </li>
+<li>A²₍A,D₎ = 0 → Although A directly regulates D, there is no distinct two-step pathway (already covered in A).  </li>
 </ul>
-<details>
-<summary>Natural Language Processing (NLP)</summary>
-<p><b>Vector representations:</b> (word embeddings, BERT, transformers) require millions of matrix multiplication operations to compute attention and contextual relationships between tokens. Each word or token is represented as a numerical vector in a high-dimensional space.</p>
-<p><b>Example:</b> In the <i>self-attention</i> mechanism of transformers, three matrices are computed: Queries (Q), Keys (K), and Values (V).  
-The attention scores are calculated through matrix multiplications as follows:  
-<i>Attention(Q, K, V) = softmax((Q × Kᵀ) / √d<sub>k</sub>) × V</i>  
-This allows each token to attend to others according to their contextual relevance, forming the core of models like BERT and GPT.</p>
-</details>
-
-<h2 id="image-and-signal-processing">Image and Signal Processing</h2>
+<hr />
+<h2 id="biological-insights">Biological Insights</h2>
 <ul>
-<li>In computer vision, <strong>convolutions</strong> can be represented as matrix multiplications between an image and filters.  </li>
-<li>In Big Data, this is applied to process large-scale image collections (e.g., facial recognition in massive datasets).</li>
+<li><strong>Indirect or cascade regulation:</strong> Detect genes that affect others through intermediate regulators (e.g., signaling pathways).  </li>
+<li><strong>Signal propagation:</strong> Analyze how activation of one gene can spread through the network over multiple steps.  </li>
+<li><strong>Hub genes:</strong> Identify genes with high connectivity in A or A² — potential master regulators or essential genes.  </li>
+<li><strong>Network redundancy:</strong> If A²₍i,j₎ &gt; 1, multiple regulatory paths exist between i and j, suggesting robustness in gene regulation.</li>
 </ul>
-<details>
-<summary>Image and Signal Processing</summary>
-<p><b>In computer vision,</b> <i>convolutions</i> can be represented as matrix multiplications between an image (a matrix of pixel values) and small filters or kernels.  
-Each convolution operation slides the filter across the image, performing local matrix multiplications to extract features such as edges, colors, or textures.</p>
-<p><b>In Big Data,</b> this approach is used to process large-scale image collections — for instance, in facial recognition systems or automatic image classification across massive datasets.</p>
-</details>
-
-<h2 id="matrix-factorization-in-recommendation-systems">Matrix Factorization in Recommendation Systems</h2>
+<hr />
+<h2 id="extensions">Extensions</h2>
 <ul>
-<li>Techniques such as <strong>Singular Value Decomposition (SVD)</strong> or <strong>Matrix Factorization</strong> decompose large matrices (users × items) into products of smaller matrices.  </li>
-<li>This allows for uncovering hidden patterns and predicting ratings.  </li>
+<li>A³ → shows interactions involving three steps (A → B → C → D).  </li>
+<li>(I + A + A² + … + Aᵏ) → total reachability or accumulated influence of a gene across the network.  </li>
+<li>Weighted adjacency matrices → edge weights can represent interaction strength, affinity, or probability of binding.</li>
 </ul>
-<details>
-<summary>Matrix Factorization in Recommendation Systems</summary>
-<p><b>Techniques such as</b> <i>Singular Value Decomposition (SVD)</i> or <i>Matrix Factorization</i> decompose large rating matrices (users × items) into the product of smaller matrices that represent latent features of users and items.</p>
-<p>This allows for uncovering hidden patterns and predicting missing ratings, forming the foundation of modern collaborative filtering methods used in platforms like Netflix and Spotify.</p>
-</details>
-
-<h2 id="scientific-simulations-and-bioinformatics">Scientific Simulations and Bioinformatics</h2>
-<ul>
-<li>In <strong>molecular dynamics, climatology, or genomics</strong>, huge matrices are used to represent interactions.  </li>
-<li>The system’s evolution is simulated through successive matrix multiplications. </li>
-</ul>
-<details>
-<summary>Scientific Simulations and Bioinformatics</summary>
-<p><b>In fields such as</b> <i>molecular dynamics, climatology, or genomics</i>, large matrices are used to represent complex interactions among system components — such as forces between atoms, correlations between genes, or environmental variables.</p>
-<p><b>The system’s evolution</b> is simulated through successive matrix multiplications, which update the state of the model over time.  
-This enables the study of complex phenomena such as protein folding, mutation propagation, or large-scale climate patterns.</p>
-</details>
 
 
 
