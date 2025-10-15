@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lectures" class="md-skip">
+        <a href="#lectures-monitoring-and-performance-engineering" class="md-skip">
           Skip to content
         </a>
       
@@ -530,56 +530,53 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#learning-objectives" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      Learning objectives
+      Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#-" class="md-nav__link">
+  <a href="#brief-biography" class="md-nav__link">
     <span class="md-ellipsis">
-      -
+      Brief Biography
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Brief Biography">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#improving-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Improving Performance
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#content" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#bentleys-rules-for-performance" class="md-nav__link">
     <span class="md-ellipsis">
-      Content
+      Bentley’s Rules for Performance
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#-_1" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#optimization-ethics" class="md-nav__link">
     <span class="md-ellipsis">
-      -
+      Optimization Ethics
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Resources
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#suggested-exercises" class="md-nav__link">
-    <span class="md-ellipsis">
-      Suggested exercises
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1392,56 +1389,53 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#learning-objectives" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      Learning objectives
+      Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#-" class="md-nav__link">
+  <a href="#brief-biography" class="md-nav__link">
     <span class="md-ellipsis">
-      -
+      Brief Biography
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Brief Biography">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#improving-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Improving Performance
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#content" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#bentleys-rules-for-performance" class="md-nav__link">
     <span class="md-ellipsis">
-      Content
+      Bentley’s Rules for Performance
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#-_1" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#optimization-ethics" class="md-nav__link">
     <span class="md-ellipsis">
-      -
+      Optimization Ethics
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Resources
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#suggested-exercises" class="md-nav__link">
-    <span class="md-ellipsis">
-      Suggested exercises
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1461,28 +1455,84 @@
 
 
 
-<h1 id="lectures">Lectures</h1>
+<h1 id="lectures-monitoring-and-performance-engineering">Lectures – Monitoring and Performance Engineering</h1>
+<hr />
+<h2 id="introduction">Introduction</h2>
+<p><img alt="Donald Knuth" src="../DonaldKnuth.png" title="Donald Knuth" /></p>
+<p><em>Programming is the art of telling another human being what one wants the computer to do.</em></p>
+<h2 id="brief-biography">Brief Biography</h2>
+<p>Donald Ervin Knuth, born on January 10, 1938, in Milwaukee, Wisconsin, USA, is a computer scientist and professor emeritus at Stanford University, best known as the author of <em>The Art of Computer Programming</em>, one of the most influential works in the field. Knuth studied mathematics at Case Institute of Technology and earned his Ph.D. in mathematics from the California Institute of Technology (Caltech). Often referred to as the “father of algorithm analysis,” he pioneered many of the foundational methods for analyzing algorithm efficiency. He is also the creator of the <strong>TeX</strong> typesetting system and the <strong>METAFONT</strong> font design system, both of which revolutionized scientific publishing. His meticulous approach to computer science has inspired generations of researchers and programmers. Throughout his career, Knuth has received numerous honors, including the <strong>Turing Award</strong>, the <strong>National Medal of Science</strong>, and the <strong>John von Neumann Medal</strong>. He continues to work on later volumes of <em>The Art of Computer Programming</em> and maintains his commitment to the precision and beauty of computing.</p>
+<h3 id="improving-performance">Improving Performance</h3>
+<p>The challenge of performance engineering lies in handling the increasing size and complexity of computations. Several strategies can help address this:</p>
+<ul>
+<li>
+<p><strong>Faster processors:</strong> Following Moore’s law, the number of transistors doubles approximately every two years, leading to faster chips. </p>
+</li>
+<li>
+<p><strong>Parallelism:</strong> Use multicore processors, GPUs, or clusters to execute computations simultaneously. </p>
+</li>
+<li>
+<p><strong>Software optimization:</strong> Adapt algorithms to take advantage of hardware and domain-specific structures. </p>
+</li>
+</ul>
+<hr />
+<p><img alt="Transistors Count" src="../transistorcount.png" title="Transistors Count" /></p>
+<p><em>Moore's Law: The number of transistors on microchips doubles every two years</em></p>
+<hr />
+<h3 id="bentleys-rules-for-performance">Bentley’s Rules for Performance</h3>
+<p>Jon Bentley proposed four practical rules to improve program performance. Each focuses on simplifying and optimizing both problem and implementation.</p>
+<p><strong>Code Simplification</strong><br />
+Fast programs are simple. Keep code minimal and clean so that it is easier to optimize and maintain.<br />
+<em>Key takeaway:</em> Simplicity enhances speed and reliability.</p>
+<details>
+<summary> Code Simplification</summary>
+<p>Imagine cooking a recipe with twenty unnecessary steps —every time you switch utensils or ingredients, you lose time and coordination.</p>
+<p>If you simplify the recipe to the essential steps, you finish faster and make fewer mistakes.</p>
+<p><i>Cooking well and quickly means keeping only what’s truly needed.</i></p>
+</details>
+
+<p><strong>Problem Simplification</strong><br />
+Simplify the problem itself before optimizing the code. Reducing complexity in the problem often yields a more efficient solution.<br />
+<em>Key takeaway:</em> A simpler problem produces a faster solution.</p>
+<details>
+<summary> Problem Simplification</summary>
+<p>Suppose you need to organize a library. Instead of sorting all the books in the world by author and date, you decide to organize only the books you actually own.</p>
+<p>By redefining the problem, you can move faster and get better results.</p>
+<p><i>Before solving a problem, make sure you’re solving the right one — and at the right scale.</i></p>
+</details>
+
+<p><strong>Relentless Suspicion</strong><br />
+Question every instruction in time-critical code and every field in space-critical data structures.<br />
+<em>Key takeaway:</em> Constantly verify the necessity of each operation.</p>
+<details>
+<summary> Relentless Suspicion</summary>
+<p>Think about packing a suitcase for a trip. Every item you pack takes up space and adds weight. If you look critically (“Do I really need this?”), you’ll realize many things are unnecessary.</p>
+<p>The lighter the suitcase, the easier it is to move and the less time you spend searching through it.</p>
+<p><i>Doubt everything that doesn’t add real value; lightness improves performance.</i></p>
+</details>
+
+<p><strong>Early Binding</strong><br />
+Perform computations earlier to avoid redundant work later. Precomputing results or decisions saves time during execution.<br />
+<em>Key takeaway:</em> Shift work forward when possible to minimize repetition.</p>
+<details>
+<summary> Early Binding</summary>
+<p>It’s like ironing your clothes right after washing them instead of every morning before leaving home.</p>
+<p>You put in effort once, and then you benefit for days.</p>
+<p><i>Doing work early prevents having to repeat it later and keeps things flowing smoothly.</i></p>
+</details>
+
+<hr />
+<h3 id="optimization-ethics">Optimization Ethics</h3>
+<p>While performance optimization is crucial, it should not come prematurely. As two pioneers famously warned:</p>
 <blockquote>
-<p><strong>Summary</strong>: <em>(Fill with PDA content)</em></p>
+<p><em>Premature optimization is the root of all evil.</em> — Donald Knuth<br />
+<em>The first rule of program optimization is “Don’t do it.” The second rule (for experts only) is “Don’t do it yet.”</em> — Michael A. Jackson</p>
 </blockquote>
-<h2 id="learning-objectives">Learning objectives</h2>
-<h2 id="-">-</h2>
-<ul>
-<li></li>
-</ul>
-<h2 id="content">Content</h2>
-<h2 id="-_1">-</h2>
-<ul>
-<li></li>
-</ul>
-<h2 id="resources">Resources</h2>
-<ul>
-<li></li>
-</ul>
-<h2 id="suggested-exercises">Suggested exercises</h2>
-<ul>
-<li></li>
-</ul>
+<p>The goal of performance engineering is to first produce <strong>clean and correct code</strong> that behaves as expected. Only after correctness is guaranteed should optimization efforts begin.</p>
+<hr />
+<p>Performance engineering, therefore, is not only about increasing speed but about <strong>understanding</strong>, <strong>measuring</strong>, and <strong>refining</strong> computation to achieve a sustainable balance between accuracy, clarity, and efficiency.</p>
+<hr />
+<p><img alt="Quotes" src="../quotes.png" title="Quotes" /></p>
 
 
 
