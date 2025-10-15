@@ -28,8 +28,8 @@ Performance can be measured by analyzing execution time under different computat
 - **Case A:** Running time = 1.32 seconds  
 - **Case B:** Running time = 7.76 seconds 
 
-[Matrix Multiply Slow](../Codes/MatrixMultiplySlow.java) 
-[Matrix Multiply Fast](../Codes/MatrixMultiplyFast.java)
+[Matrix Multiply Slow](../../files/Codes/MatrixMultiplySlow.java) 
+[Matrix Multiply Fast](../../files/Codes/MatrixMultiplyFast.java)
 
 The only difference between the two implementations is the **loop order**. This affects how memory is accessed, leading to variations in performance by a factor of up to six. Such behavior arises from **data locality**, a key concept in performance analysis.  
 
