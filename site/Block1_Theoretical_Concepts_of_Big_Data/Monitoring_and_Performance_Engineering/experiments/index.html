@@ -1559,8 +1559,8 @@
 <li><strong>Case A:</strong> Running time = 1.32 seconds  </li>
 <li><strong>Case B:</strong> Running time = 7.76 seconds </li>
 </ul>
-<p><a href="../../../files/Codes/MatrixMultiplySlow.java">Matrix Multiply Slow</a> 
-<a href="../../../files/Codes/MatrixMultiplyFast.java">Matrix Multiply Fast</a></p>
+<p><a href="../../../files/Codes/MatrixMultiplySlow.java">Matrix Multiply Slow</a>  </p>
+<p><a href="../../../files/Codes/MatrixMultiplyFast.java">Matrix Multiply Fast</a></p>
 <p>The only difference between the two implementations is the <strong>loop order</strong>. This affects how memory is accessed, leading to variations in performance by a factor of up to six. Such behavior arises from <strong>data locality</strong>, a key concept in performance analysis.  </p>
 <p>Data that is accessed consecutively tends to remain in fast memory (cache), resulting in quicker computations. When data is scattered, cache performance degrades, leading to slower execution.</p>
 <hr />
@@ -1571,7 +1571,7 @@
 - Access memory in sequential order whenever possible.<br />
 - Choose data structures that map efficiently to cache lines.  </p>
 <p>Even small changes in loop nesting or traversal order can significantly improve performance without altering the algorithm itself.</p>
-<p><a href="/Codes/MatrixMultiplyBlocked.java">Matrix Multiply Blocked (or Tiling)</a>  </p>
+<p><a href="../../../files/Codes/MatrixMultiplyBlocked.java">Matrix Multiply Blocked (or Tiling)</a>  </p>
 <h2 id="this-implementation-demonstrates-cache-blocking-or-tiling-which-improves-performance-by-maximizing-cache-reuse">This implementation demonstrates cache blocking (or tiling), which improves performance by maximizing cache reuse.</h2>
 <h3 id="algorithmic-optimization">Algorithmic Optimization</h3>
 <p>Optimization is also achieved through algorithm design. For instance, matrix multiplication can be performed using algorithms with lower theoretical complexity:</p>
@@ -1674,7 +1674,7 @@ C22 = M1 − M2 + M3 + M6</code></pre>
 </tbody>
 </table>
 <p>As density increases, the amount of computation and storage requirements grow proportionally.</p>
-<p><a href="/Codes/DenseVsCSRSquare.java">Dense vs CRS</a>  </p>
+<p><a href="../../../files/Codes/DenseVsCSRSquare.java">Dense vs CRS</a>  </p>
 <details>
 <summary> Runing times test</summary>
   <p><strong>Correction:</strong> The checksums are identical and the max error is 0 &rarr; both implementations compute the same result. <span class="pill">100%</span></p>
