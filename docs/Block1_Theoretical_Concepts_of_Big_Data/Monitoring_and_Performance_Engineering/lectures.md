@@ -6,7 +6,8 @@
 
 ![Donald Knuth](DonaldKnuth.png "Donald Knuth")
 
-*Programming is the art of telling another human being what one wants the computer to do.*
+>*Programming is the art of telling another human being what one wants the computer to do.*
+> Donald Knuth
 
 ## Brief Biography
 
@@ -39,6 +40,12 @@ Jon Bentley proposed four practical rules to improve program performance. Each f
 Fast programs are simple. Keep code minimal and clean so that it is easier to optimize and maintain.  
 *Key takeaway:* Simplicity enhances speed and reliability.
 
+**Don't do it**
+The fastest way to execute an operation is not to do it at all.
+Often, part of the code performs unnecessary or repetitive tasks that can be eliminated.
+
+*Example:* avoid redundant calculations inside loops, remove dead code, or prevent unnecessary disk or network accesses.
+
 <details>
 <summary> Code Simplification</summary>
 <p>Imagine cooking a recipe with twenty unnecessary steps —every time you switch utensils or ingredients, you lose time and coordination.</p>
@@ -46,9 +53,17 @@ Fast programs are simple. Keep code minimal and clean so that it is easier to op
 <p><i>Cooking well and quickly means keeping only what’s truly needed.</i></p>
 </details>
 
+[Code Simplification](lectures_code.md#code-simplification)
+
 **Problem Simplification**  
 Simplify the problem itself before optimizing the code. Reducing complexity in the problem often yields a more efficient solution.  
 *Key takeaway:* A simpler problem produces a faster solution.
+
+**Do it, but don’t do it again**
+
+If an operation must be done, store the result so it doesn’t need to be recalculated.
+This is known as memoization or caching.
+*Example:* store the results of an API query or an expensive function in memory.
 
 <details>
 <summary> Problem Simplification</summary>
@@ -57,9 +72,17 @@ Simplify the problem itself before optimizing the code. Reducing complexity in t
 <p><i>Before solving a problem, make sure you’re solving the right one — and at the right scale.</i></p>
 </details>
 
+[Problem Simplification](lectures_code.md#problem-simplification)
+
 **Relentless Suspicion**  
 Question every instruction in time-critical code and every field in space-critical data structures.  
 *Key takeaway:* Constantly verify the necessity of each operation.
+
+**Do it less**
+
+Reduce the amount of work performed.
+Optimize loops, divide the problem, or use more efficient data structures.  
+*Example:* replace a linear search (O(n)) with a binary search (O(log n)).
 
 <details>
 <summary> Relentless Suspicion</summary>
@@ -68,9 +91,18 @@ Question every instruction in time-critical code and every field in space-critic
 <p><i>Doubt everything that doesn’t add real value; lightness improves performance.</i></p>
 </details>
 
+[Relentless Suspicion](lectures_code.md#relentless-suspicion)
+
 **Early Binding**  
 Perform computations earlier to avoid redundant work later. Precomputing results or decisions saves time during execution.  
 *Key takeaway:* Shift work forward when possible to minimize repetition.
+
+**Do it better**
+
+If something cannot be removed or reduced, do it more efficiently.
+This involves using better algorithms or data structures, taking advantage of parallelism, or adapting the code to the hardware.  
+
+*Example:* use a faster sorting algorithm, parallelize tasks, or vectorize operations.
 
 <details>
 <summary> Early Binding</summary>
@@ -78,6 +110,8 @@ Perform computations earlier to avoid redundant work later. Precomputing results
 <p>You put in effort once, and then you benefit for days.</p>
 <p><i>Doing work early prevents having to repeat it later and keeps things flowing smoothly.</i></p>
 </details>
+
+[Early Binding](lectures_code.md#early-binding)
 
 ---
 
