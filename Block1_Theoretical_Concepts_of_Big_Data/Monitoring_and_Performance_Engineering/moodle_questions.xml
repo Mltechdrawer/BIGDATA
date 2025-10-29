@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="multichoice">
+<name><text>Fundamental Coding Rules - Side Effects</text></name>
+<questiontext format="html"><text>Which practice best reduces unintended side effects in functions?</text></questiontext>
+<shuffleanswers>true</shuffleanswers>
+<answer fraction="100"><text>Using pure functions that avoid modifying external state.</text><feedback><text>Correct because pure functions improve predictability, testability, and reduce hidden dependencies.</text></feedback></answer>
+<answer fraction="0"><text>Using global variables to store intermediate state.</text><feedback><text>Incorrect because global state increases coupling and risk of unintended interactions.</text></feedback></answer>
+<answer fraction="0"><text>Allowing functions to modify input parameters directly.</text><feedback><text>Incorrect because mutating inputs hides side effects and complicates reasoning about behavior.</text></feedback></answer>
+<answer fraction="0"><text>Relying on implicit type conversions to simplify return values.</text><feedback><text>Incorrect because implicit conversions can introduce unexpected runtime behavior.</text></feedback></answer>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+</question>
+<question type="multichoice">
+<name><text>Compiler Optimization - Inlining</text></name>
+<questiontext format="html"><text>What is the main benefit of function inlining performed by the compiler?</text></questiontext>
+<shuffleanswers>true</shuffleanswers>
+<answer fraction="100"><text>Reduces function call overhead by replacing calls with function bodies.</text><feedback><text>Correct because it avoids stack frame overhead and improves performance in small, hot functions.</text></feedback></answer>
+<answer fraction="0"><text>Increases code size, improving readability.</text><feedback><text>Incorrect because increased code size is a drawback, not a benefit.</text></feedback></answer>
+<answer fraction="0"><text>Ensures that the function always runs faster regardless of context.</text><feedback><text>Incorrect because inlining may hurt i-cache locality and is not always faster.</text></feedback></answer>
+<answer fraction="0"><text>Automatically parallelizes the code.</text><feedback><text>Incorrect because inlining does not add concurrency capabilities.</text></feedback></answer>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+</question>
+<question type="multichoice">
+<name><text>Language-Level Optimizations - Tail Recursion</text></name>
+<questiontext format="html"><text>Why do some languages optimize tail-recursive functions?</text></questiontext>
+<shuffleanswers>true</shuffleanswers>
+<answer fraction="100"><text>To convert recursion into iteration and avoid stack overflows.</text><feedback><text>Correct because tail-call elimination reuses stack space and enables safe deep recursion.</text></feedback></answer>
+<answer fraction="0"><text>To automatically parallelize recursive calls.</text><feedback><text>Incorrect because tail recursion does not imply concurrency.</text></feedback></answer>
+<answer fraction="0"><text>To remove the need for return statements.</text><feedback><text>Incorrect because return semantics still exist even after optimization.</text></feedback></answer>
+<answer fraction="0"><text>To enforce immutable data structures.</text><feedback><text>Incorrect because immutability is unrelated to tail recursion optimizations.</text></feedback></answer>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+</question>
+<question type="multichoice">
+<name><text>Loop Unrolling</text></name>
+<questiontext format="html"><text>What is the primary purpose of loop unrolling?</text></questiontext>
+<shuffleanswers>true</shuffleanswers>
+<answer fraction="100"><text>Reducing loop control overhead and increasing instruction-level parallelism.</text><feedback><text>Correct: unrolling exposes more operations to the CPU and reduces branch/loop control overhead.</text></feedback></answer>
+<answer fraction="0"><text>Reducing code readability.</text><feedback><text>Incorrect: readability often suffers but that is not the purpose.</text></feedback></answer>
+<answer fraction="0"><text>Automatically vectorizing data operations.</text><feedback><text>Incorrect: unrolling may help but does not guarantee vectorization.</text></feedback></answer>
+<answer fraction="0"><text>Ensuring hardware branch prediction always succeeds.</text><feedback><text>Incorrect: branch prediction quality is not guaranteed by unrolling.</text></feedback></answer>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+</question>
+<question type="multichoice">
+<name><text>Cache Locality</text></name>
+<questiontext format="html"><text>Which code pattern improves cache locality?</text></questiontext>
+<shuffleanswers>true</shuffleanswers>
+<answer fraction="100"><text>Accessing array elements sequentially.</text><feedback><text>Correct: sequential access improves spatial locality and reduces cache misses.</text></feedback></answer>
+<answer fraction="0"><text>Accessing random memory addresses.</text><feedback><text>Incorrect: random accesses reduce cache utilization and increase misses.</text></feedback></answer>
+<answer fraction="0"><text>Using deep recursion for large matrix operations.</text><feedback><text>Incorrect: recursion often harms locality due to stack traffic and poor traversal order.</text></feedback></answer>
+<answer fraction="0"><text>Allocating data structures on disk instead of memory.</text><feedback><text>Incorrect: disk is orders of magnitude slower than RAM and cache.</text></feedback></answer>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+</question>
+<question type="multichoice">
+<name><text>Branch Prediction</text></name>
+<questiontext format="html"><text>What causes branch misprediction performance penalties?</text></questiontext>
+<shuffleanswers>true</shuffleanswers>
+<answer fraction="100"><text>The CPU pipeline must be flushed and instructions refetched.</text><feedback><text>Correct: mispredictions discard speculative work and stall the pipeline.</text></feedback></answer>
+<answer fraction="0"><text>The code is compiled without optimization flags.</text><feedback><text>Incorrect: optimization level may influence layout but does not directly cause pipeline flushes.</text></feedback></answer>
+<answer fraction="0"><text>The source code contains comments.</text><feedback><text>Incorrect: comments are ignored by the compiler.</text></feedback></answer>
+<answer fraction="0"><text>The program uses only integer operations.</text><feedback><text>Incorrect: data type does not directly affect branch prediction.</text></feedback></answer>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+</question>
+<question type="multichoice">
+<name><text>Vectorization (SIMD)</text></name>
+<questiontext format="html"><text>Which scenario best benefits from SIMD vectorization?</text></questiontext>
+<shuffleanswers>true</shuffleanswers>
+<answer fraction="100"><text>Operations applied repeatedly to contiguous numerical data.</text><feedback><text>Correct: SIMD units operate on packed data to perform the same operation across lanes.</text></feedback></answer>
+<answer fraction="0"><text>Highly branching decision trees.</text><feedback><text>Incorrect: control divergence undermines vectorization.</text></feedback></answer>
+<answer fraction="0"><text>Sparse graph traversals with pointer chasing.</text><feedback><text>Incorrect: irregular memory access limits SIMD efficiency.</text></feedback></answer>
+<answer fraction="0"><text>I/O‑bound ETL workloads.</text><feedback><text>Incorrect: SIMD targets compute, not I/O wait times.</text></feedback></answer>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+</question>
+<question type="multichoice">
+<name><text>Memory Alignment</text></name>
+<questiontext format="html"><text>Why is memory alignment important for performance?</text></questiontext>
+<shuffleanswers>true</shuffleanswers>
+<answer fraction="100"><text>Aligned memory allows the CPU to load data in fewer instructions.</text><feedback><text>Correct: alignment matches bus/line widths and avoids penalties for misaligned access.</text></feedback></answer>
+<answer fraction="0"><text>It reduces power usage by half.</text><feedback><text>Incorrect: any power impact is incidental, not the primary reason.</text></feedback></answer>
+<answer fraction="0"><text>It improves source code readability.</text><feedback><text>Incorrect: alignment is an implementation detail, not a readability feature.</text></feedback></answer>
+<answer fraction="0"><text>It guarantees thread-safety.</text><feedback><text>Incorrect: alignment and synchronization are different concerns.</text></feedback></answer>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+</question>
+<question type="multichoice">
+<name><text>Dead Code Elimination</text></name>
+<questiontext format="html"><text>What does dead code elimination remove?</text></questiontext>
+<shuffleanswers>true</shuffleanswers>
+<answer fraction="100"><text>Code that never affects program observable behavior.</text><feedback><text>Correct: removing such code reduces binary size and possibly execution time.</text></feedback></answer>
+<answer fraction="0"><text>Code that executes rarely.</text><feedback><text>Incorrect: rarity is irrelevant if it affects outputs/side effects.</text></feedback></answer>
+<answer fraction="0"><text>Comments and documentation.</text><feedback><text>Incorrect: these are removed by preprocessing/lexing, not by DCE.</text></feedback></answer>
+<answer fraction="0"><text>Debug logging compiled in release builds.</text><feedback><text>Incorrect: DCE cannot assume logs are irrelevant unless proven to not affect behavior.</text></feedback></answer>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+</question>
+<question type="multichoice">
+<name><text>Constant Folding</text></name>
+<questiontext format="html"><text>What does constant folding do?</text></questiontext>
+<shuffleanswers>true</shuffleanswers>
+<answer fraction="100"><text>Evaluates constant expressions at compile time.</text><feedback><text>Correct: precomputes results to reduce runtime work.</text></feedback></answer>
+<answer fraction="0"><text>Replaces constants with variables for flexibility.</text><feedback><text>Incorrect: it does the opposite—reduces expressions to constants.</text></feedback></answer>
+<answer fraction="0"><text>Guarantees numerical precision.</text><feedback><text>Incorrect: precision depends on type/semantics, not folding.</text></feedback></answer>
+<answer fraction="0"><text>Allocates constants on disk to save RAM.</text><feedback><text>Incorrect: storage strategy is unrelated to constant folding.</text></feedback></answer>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+</question>
+<question type="multichoice">
+<name><text>Parallel Programming - Race Conditions</text></name>
+<questiontext format="html"><text>Which issue commonly arises in multithreaded applications?</text></questiontext>
+<shuffleanswers>true</shuffleanswers>
+<answer fraction="100"><text>Race conditions.</text><feedback><text>Correct: unsynchronized shared access leads to nondeterministic behavior.</text></feedback></answer>
+<answer fraction="0"><text>Increased disk capacity.</text><feedback><text>Incorrect: threading does not change storage capacity.</text></feedback></answer>
+<answer fraction="0"><text>Automatic elimination of memory leaks.</text><feedback><text>Incorrect: concurrency does not fix memory management.</text></feedback></answer>
+<answer fraction="0"><text>Guaranteed performance improvements.</text><feedback><text>Incorrect: contention and overhead can negate speedups.</text></feedback></answer>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+</question>
+<question type="multichoice">
+<name><text>False Sharing</text></name>
+<questiontext format="html"><text>What is false sharing?</text></questiontext>
+<shuffleanswers>true</shuffleanswers>
+<answer fraction="100"><text>Multiple threads modify distinct variables that share the same cache line.</text><feedback><text>Correct: this causes frequent cache invalidations and slows execution.</text></feedback></answer>
+<answer fraction="0"><text>Two variables share the same pointer value.</text><feedback><text>Incorrect: pointer aliasing is a different problem.</text></feedback></answer>
+<answer fraction="0"><text>Data is copied redundantly for safety.</text><feedback><text>Incorrect: that describes defensive copying, not false sharing.</text></feedback></answer>
+<answer fraction="0"><text>The compiler renames variables during optimization.</text><feedback><text>Incorrect: unrelated to cache coherence.</text></feedback></answer>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+</question>
+<question type="multichoice">
+<name><text>I/O vs CPU Bound</text></name>
+<questiontext format="html"><text>Which optimization is most effective for I/O‑bound workloads?</text></questiontext>
+<shuffleanswers>true</shuffleanswers>
+<answer fraction="100"><text>Overlapping I/O with computation using asynchronous operations.</text><feedback><text>Correct: hides I/O latency by doing useful work while waiting.</text></feedback></answer>
+<answer fraction="0"><text>Increasing CPU clock frequency.</text><feedback><text>Incorrect: the bottleneck is the device, not the CPU.</text></feedback></answer>
+<answer fraction="0"><text>Loop unrolling.</text><feedback><text>Incorrect: targets CPU loops, not I/O delays.</text></feedback></answer>
+<answer fraction="0"><text>SIMD vectorization.</text><feedback><text>Incorrect: accelerates compute, not device latency.</text></feedback></answer>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+</question>
+<question type="multichoice">
+<name><text>Devirtualization</text></name>
+<questiontext format="html"><text>What does compiler devirtualization primarily achieve?</text></questiontext>
+<shuffleanswers>true</shuffleanswers>
+<answer fraction="100"><text>Converts indirect (virtual) calls into direct calls when the target is known.</text><feedback><text>Correct: reduces call overhead and enables further optimizations like inlining.</text></feedback></answer>
+<answer fraction="0"><text>Automatically adds new virtual methods at runtime.</text><feedback><text>Incorrect: compilers do not add virtual members dynamically.</text></feedback></answer>
+<answer fraction="0"><text>Guarantees thread-safe polymorphism.</text><feedback><text>Incorrect: devirtualization is unrelated to synchronization.</text></feedback></answer>
+<answer fraction="0"><text>Replaces all dynamic dispatch with reflection.</text><feedback><text>Incorrect: reflection is different from static dispatch.</text></feedback></answer>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+</question>
+<question type="multichoice">
+<name><text>Escape Analysis</text></name>
+<questiontext format="html"><text>How can escape analysis improve performance in managed runtimes?</text></questiontext>
+<shuffleanswers>true</shuffleanswers>
+<answer fraction="100"><text>By allocating non-escaping objects on the stack or eliminating allocations.</text><feedback><text>Correct: stack allocation and scalar replacement reduce GC pressure.</text></feedback></answer>
+<answer fraction="0"><text>By forcing all objects onto the heap.</text><feedback><text>Incorrect: that increases GC load.</text></feedback></answer>
+<answer fraction="0"><text>By disabling bounds checks for all arrays.</text><feedback><text>Incorrect: safety checks are not universally removed by escape analysis.</text></feedback></answer>
+<answer fraction="0"><text>By converting integers to floating-point for speed.</text><feedback><text>Incorrect: numeric type changes are unrelated.</text></feedback></answer>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+</question>
+<question type="multichoice">
+<name><text>Strength Reduction</text></name>
+<questiontext format="html"><text>Which is an example of strength reduction?</text></questiontext>
+<shuffleanswers>true</shuffleanswers>
+<answer fraction="100"><text>Replacing multiplication by a power of two with a left shift.</text><feedback><text>Correct: shifts are cheaper than general multiplication on many architectures.</text></feedback></answer>
+<answer fraction="0"><text>Replacing addition with division for precision.</text><feedback><text>Incorrect: division is slower and not a reduction.</text></feedback></answer>
+<answer fraction="0"><text>Turning bitwise AND into modulo for clarity.</text><feedback><text>Incorrect: that is typically slower, not stronger.</text></feedback></answer>
+<answer fraction="0"><text>Using floating-point where integers suffice.</text><feedback><text>Incorrect: unrelated and may be slower or less precise.</text></feedback></answer>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+</question>
+<question type="multichoice">
+<name><text>Register Allocation and Spilling</text></name>
+<questiontext format="html"><text>Why does register spilling hurt performance?</text></questiontext>
+<shuffleanswers>true</shuffleanswers>
+<answer fraction="100"><text>Values are stored to and loaded from memory instead of fast registers.</text><feedback><text>Correct: spills add extra memory traffic and latency on the critical path.</text></feedback></answer>
+<answer fraction="0"><text>It increases code readability in assembly listings.</text><feedback><text>Incorrect: readability is irrelevant to performance.</text></feedback></answer>
+<answer fraction="0"><text>It forces the compiler to inline all functions.</text><feedback><text>Incorrect: inlining and spilling are independent.</text></feedback></answer>
+<answer fraction="0"><text>It guarantees vectorization will occur.</text><feedback><text>Incorrect: spilling does not enable SIMD; it can hinder it.</text></feedback></answer>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+</question>
+<question type="multichoice">
+<name><text>NUMA Locality</text></name>
+<questiontext format="html"><text>Which practice best preserves performance on NUMA systems?</text></questiontext>
+<shuffleanswers>true</shuffleanswers>
+<answer fraction="100"><text>Allocate memory on the same node where the thread runs (first-touch policy).</text><feedback><text>Correct: local memory access avoids remote node latency and bandwidth penalties.</text></feedback></answer>
+<answer fraction="0"><text>Pin all threads to a single core to simplify scheduling.</text><feedback><text>Incorrect: this creates contention and underutilization.</text></feedback></answer>
+<answer fraction="0"><text>Randomly migrate threads across nodes to balance load.</text><feedback><text>Incorrect: migration increases remote accesses and cache coldness.</text></feedback></answer>
+<answer fraction="0"><text>Disable memory interleaving for all workloads.</text><feedback><text>Incorrect: interleaving can help some patterns; blanket disabling is not optimal.</text></feedback></answer>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+</question>
+<question type="multichoice">
+<name><text>Hardware Prefetching</text></name>
+<questiontext format="html"><text>When does software prefetching help performance the most?</text></questiontext>
+<shuffleanswers>true</shuffleanswers>
+<answer fraction="100"><text>When access patterns are predictable but the hardware prefetcher cannot detect them.</text><feedback><text>Correct: explicit prefetch hides memory latency in complex-yet-regular patterns.</text></feedback></answer>
+<answer fraction="0"><text>When the workload is purely compute-bound with hot data in L1.</text><feedback><text>Incorrect: there is little memory latency to hide.</text></feedback></answer>
+<answer fraction="0"><text>When the program frequently blocks on disk I/O.</text><feedback><text>Incorrect: prefetching CPU caches does not fix disk waits.</text></feedback></answer>
+<answer fraction="0"><text>When branches are highly unpredictable.</text><feedback><text>Incorrect: prefetching does not resolve control hazards.</text></feedback></answer>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+</question>
+<question type="multichoice">
+<name><text>GPU - Memory Coalescing</text></name>
+<questiontext format="html"><text>Which access pattern maximizes global memory throughput on GPUs?</text></questiontext>
+<shuffleanswers>true</shuffleanswers>
+<answer fraction="100"><text>Threads in a warp accessing consecutive addresses (coalesced).</text><feedback><text>Correct: coalescing merges requests into fewer transactions, increasing bandwidth.</text></feedback></answer>
+<answer fraction="0"><text>Each thread randomly accessing different 4KB pages.</text><feedback><text>Incorrect: this defeats coalescing and wastes bandwidth.</text></feedback></answer>
+<answer fraction="0"><text>Divergent branches causing half the threads to skip loads.</text><feedback><text>Incorrect: divergence reduces effective throughput.</text></feedback></answer>
+<answer fraction="0"><text>Issuing many small scalar loads per thread with large strides.</text><feedback><text>Incorrect: strided/scattered loads fragment bandwidth and increase latency.</text></feedback></answer>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+</question>
+</quiz>
