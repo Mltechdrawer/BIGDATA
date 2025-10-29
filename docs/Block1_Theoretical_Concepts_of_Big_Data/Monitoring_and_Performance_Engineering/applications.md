@@ -118,3 +118,7 @@ Key reminders:
 
 > *Premature optimization is the root of all evil.* — Donald Knuth
 
+---
+
+[Exercises 1](exercisesapplications1.md "Ejercicios")
+

@@ -1,4 +1,6 @@
-# Applications: Application of Matrix Multiplication to Graph Theory
+# Applications - Complexity Management
+
+## Application of Matrix Multiplication to Graph Theory
 
 ## Introduction
 

@@ -1487,6 +1487,10 @@ Donald Knuth</p>
 <p><strong>Code Simplification</strong><br />
 Fast programs are simple. Keep code minimal and clean so that it is easier to optimize and maintain.<br />
 <em>Key takeaway:</em> Simplicity enhances speed and reliability.</p>
+<p><strong>Don't do it</strong>
+The fastest way to execute an operation is not to do it at all.
+Often, part of the code performs unnecessary or repetitive tasks that can be eliminated.</p>
+<p><em>Example:</em> avoid redundant calculations inside loops, remove dead code, or prevent unnecessary disk or network accesses.</p>
 <details>
 <summary> Code Simplification</summary>
 <p>Imagine cooking a recipe with twenty unnecessary steps —every time you switch utensils or ingredients, you lose time and coordination.</p>
@@ -1494,9 +1498,14 @@ Fast programs are simple. Keep code minimal and clean so that it is easier to op
 <p><i>Cooking well and quickly means keeping only what’s truly needed.</i></p>
 </details>
 
+<p><a href="../lectures_code/#code-simplification">Code Simplification</a></p>
 <p><strong>Problem Simplification</strong><br />
 Simplify the problem itself before optimizing the code. Reducing complexity in the problem often yields a more efficient solution.<br />
 <em>Key takeaway:</em> A simpler problem produces a faster solution.</p>
+<p><strong>Do it, but don’t do it again</strong></p>
+<p>If an operation must be done, store the result so it doesn’t need to be recalculated.
+This is known as memoization or caching.
+<em>Example:</em> store the results of an API query or an expensive function in memory.</p>
 <details>
 <summary> Problem Simplification</summary>
 <p>Suppose you need to organize a library. Instead of sorting all the books in the world by author and date, you decide to organize only the books you actually own.</p>
@@ -1504,9 +1513,14 @@ Simplify the problem itself before optimizing the code. Reducing complexity in t
 <p><i>Before solving a problem, make sure you’re solving the right one — and at the right scale.</i></p>
 </details>
 
+<p><a href="../lectures_code/#problem-simplification">Problem Simplification</a></p>
 <p><strong>Relentless Suspicion</strong><br />
 Question every instruction in time-critical code and every field in space-critical data structures.<br />
 <em>Key takeaway:</em> Constantly verify the necessity of each operation.</p>
+<p><strong>Do it less</strong></p>
+<p>Reduce the amount of work performed.
+Optimize loops, divide the problem, or use more efficient data structures.<br />
+<em>Example:</em> replace a linear search (O(n)) with a binary search (O(log n)).</p>
 <details>
 <summary> Relentless Suspicion</summary>
 <p>Think about packing a suitcase for a trip. Every item you pack takes up space and adds weight. If you look critically (“Do I really need this?”), you’ll realize many things are unnecessary.</p>
@@ -1514,9 +1528,14 @@ Question every instruction in time-critical code and every field in space-critic
 <p><i>Doubt everything that doesn’t add real value; lightness improves performance.</i></p>
 </details>
 
+<p><a href="../lectures_code/#relentless-suspicion">Relentless Suspicion</a></p>
 <p><strong>Early Binding</strong><br />
 Perform computations earlier to avoid redundant work later. Precomputing results or decisions saves time during execution.<br />
 <em>Key takeaway:</em> Shift work forward when possible to minimize repetition.</p>
+<p><strong>Do it better</strong></p>
+<p>If something cannot be removed or reduced, do it more efficiently.
+This involves using better algorithms or data structures, taking advantage of parallelism, or adapting the code to the hardware.  </p>
+<p><em>Example:</em> use a faster sorting algorithm, parallelize tasks, or vectorize operations.</p>
 <details>
 <summary> Early Binding</summary>
 <p>It’s like ironing your clothes right after washing them instead of every morning before leaving home.</p>
@@ -1524,6 +1543,7 @@ Perform computations earlier to avoid redundant work later. Precomputing results
 <p><i>Doing work early prevents having to repeat it later and keeps things flowing smoothly.</i></p>
 </details>
 
+<p><a href="../lectures_code/#early-binding">Early Binding</a></p>
 <hr />
 <h3 id="optimization-ethics">Optimization Ethics</h3>
 <p>While performance optimization is crucial, it should not come prematurely. As two pioneers famously warned:</p>

@@ -1,4 +1,4 @@
-# Lectures
+# Lectures - Complexity Management
 
 ---
 

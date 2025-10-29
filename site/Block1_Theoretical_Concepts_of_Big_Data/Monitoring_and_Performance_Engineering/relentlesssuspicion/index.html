@@ -16,7 +16,7 @@
     
     
       
-        <title>Examples - Big Data</title>
+        <title>Relentless Suspicion — Examples - Big Data</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#examples-performance-engineering" class="md-skip">
+        <a href="#relentless-suspicion-examples" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Examples
+              Relentless Suspicion — Examples
             
           </span>
         </div>
@@ -1278,6 +1278,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1286,46 +1288,52 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#examples-performance-engineering" class="md-nav__link">
+  <a href="#example-1-inefficient-sorting-with-redundant-operations" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples — Performance Engineering
+      Example 1 — Inefficient Sorting with Redundant Operations
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Example 1 — Inefficient Sorting with Redundant Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problems
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#code-simplification-example-code-simplification-example" class="md-nav__link">
+  <a href="#example-2-use-the-optimized-builtin-sort-timsort" class="md-nav__link">
     <span class="md-ellipsis">
-      Code Simplification Example {#code-simplification-example}
+      Example 2 — Use the Optimized Built‑in Sort (Timsort)
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Code Simplification Example {#code-simplification-example}">
+    <nav class="md-nav" aria-label="Example 2 — Use the Optimized Built‑in Sort (Timsort)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#original-code" class="md-nav__link">
+  <a href="#code_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Original Code
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#simplified-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      Simplified Version
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#explanation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Explanation
+      Code
     </span>
   </a>
   
@@ -1333,6 +1341,72 @@
         
           <li class="md-nav__item">
   <a href="#benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-3-spacecritical-structure-with-redundant-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 3 — Space‑Critical Structure with Redundant Fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example 3 — Space‑Critical Structure with Redundant Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problems_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problems
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-4-minimal-schema-load-on-demand" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 4 — Minimal Schema + Load on Demand
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example 4 — Minimal Schema + Load on Demand">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benefits_1" class="md-nav__link">
     <span class="md-ellipsis">
       Benefits
     </span>
@@ -1361,48 +1435,89 @@
 
 
 
-  <h1>Examples</h1>
-
-<h3 id="examples-performance-engineering">Examples — Performance Engineering</h3>
-<p>This document collects practical code examples that illustrate each of the fundamental rules discussed in the <em>Applications</em> section of Performance Engineering.</p>
+<h1 id="relentless-suspicion-examples">Relentless Suspicion — Examples</h1>
+<p><strong>Principle.</strong> Question the necessity of each instruction in a time‑critical piece of code and each field in a space‑critical data structure. Remove redundant work, use optimized primitives, and keep data minimal.</p>
 <hr />
-<h3 id="code-simplification-example-code-simplification-example">Code Simplification Example {#code-simplification-example}</h3>
-<p>The <strong>Code Simplification</strong> rule by Jon Bentley emphasizes that simple programs are both faster and easier to maintain. By reducing unnecessary constructs and using concise syntax, performance and readability can be improved simultaneously.</p>
-<h4 id="original-code">Original Code</h4>
-<pre><code class="language-python">def sum_of_squares(nums):
-    result = 0
-    for num in nums:
-        if num % 2 == 0:
-            result += num ** 2
+<h2 id="example-1-inefficient-sorting-with-redundant-operations">Example 1 — Inefficient Sorting with Redundant Operations</h2>
+<h3 id="code">Code</h3>
+<pre><code class="language-python">def time_critical_sort(nums):
+    result = nums.copy()  # Unnecessary copy
+    for i in range(len(result)):
+        for j in range(i + 1, len(result)):
+            if result[i] &gt; result[j]:
+                # Swap elements (bubble/selection-like)
+                result[i], result[j] = result[j], result[i]
     return result
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8]
-print(sum_of_squares(numbers))
+numbers = [5, 3, 8, 4, 2, 9, 1]
+print(time_critical_sort(numbers))
 </code></pre>
-<p><strong>Output:</strong></p>
-<pre><code>120
-</code></pre>
-<p>This version works correctly but is unnecessarily verbose: it creates a loop, performs conditional checks, and manually accumulates results.</p>
-<h4 id="simplified-version">Simplified Version</h4>
-<pre><code class="language-python">def sum_of_squares(nums):
-    return sum(num ** 2 for num in nums if num % 2 == 0)
-</code></pre>
-<p><strong>Output:</strong></p>
-<pre><code>120
-</code></pre>
-<h4 id="explanation">Explanation</h4>
+<h3 id="problems">Problems</h3>
 <ul>
-<li>The expression <code>(num ** 2 for num in nums if num % 2 == 0)</code> generates squares of all even numbers.</li>
-<li><code>sum()</code> directly adds those values without needing an intermediate variable.</li>
+<li><strong>Unnecessary Copy (<code>nums.copy()</code>):</strong> Adds O(n) time and extra memory traffic.</li>
+<li><strong>Inefficient Sorting (O(n²))</strong>: Nested loops are too slow for large lists.</li>
+<li><strong>Redundant Operations:</strong> Many swaps; ignores better built‑in algorithms and cache behaviour.</li>
 </ul>
-<h4 id="benefits">Benefits</h4>
+<hr />
+<h2 id="example-2-use-the-optimized-builtin-sort-timsort">Example 2 — Use the Optimized Built‑in Sort (Timsort)</h2>
+<h3 id="code_1">Code</h3>
+<pre><code class="language-python">def time_critical_sort(nums):
+    nums.sort()  # In‑place sorting, Timsort (average/worst O(n log n))
+    return nums
+
+numbers = [5, 3, 8, 4, 2, 9, 1]
+print(time_critical_sort(numbers))
+</code></pre>
+<h3 id="benefits">Benefits</h3>
+<ol>
+<li><strong>Reduced Complexity:</strong> Eliminates the extra O(n) copy and unnecessary swaps.</li>
+<li><strong>Efficient Sorting:</strong> Leverages Python’s highly optimized <strong>Timsort</strong> for real‑world data.</li>
+<li><strong>Improved Readability:</strong> The code states the intent directly — <em>sort the list</em>.</li>
+</ol>
+<blockquote>
+<p>Takeaway: prefer a single well‑tuned library call over custom O(n²) loops.</p>
+</blockquote>
+<hr />
+<h2 id="example-3-spacecritical-structure-with-redundant-fields">Example 3 — Space‑Critical Structure with Redundant Fields</h2>
+<h3 id="code_2">Code</h3>
+<pre><code class="language-python">class UserData:
+    def __init__(self, username, email, age, address, phone, preferences, bio, membership):
+        self.username = username
+        self.email = email
+        self.age = age
+        self.address = address
+        self.phone = phone
+        self.preferences = preferences
+        self.bio = bio
+        self.membership = membership
+</code></pre>
+<h3 id="problems_1">Problems</h3>
 <ul>
-<li><strong>Simplicity:</strong> Fewer lines of code, clearer intent.</li>
-<li><strong>Performance:</strong> Python comprehensions are internally optimized in C.</li>
-<li><strong>Readability:</strong> The purpose is immediately visible — <em>sum of even squares</em>.</li>
-<li><strong>Maintainability:</strong> Less code means fewer potential errors.</li>
+<li><strong>Redundant Fields:</strong> Not all attributes are required for core features.</li>
+<li><strong>High Memory Usage:</strong> Large fields (e.g., <code>address</code>, <code>bio</code>, <code>preferences</code>) bloat RAM/serialization.</li>
 </ul>
-<p>This example demonstrates Bentley’s principle: <em>simpler code is often faster code</em>.</p>
+<hr />
+<h2 id="example-4-minimal-schema-load-on-demand">Example 4 — Minimal Schema + Load on Demand</h2>
+<h3 id="code_3">Code</h3>
+<pre><code class="language-python">class UserData:
+    def __init__(self, username, email, membership):
+        self.username = username
+        self.email = email
+        self.membership = membership
+
+    # Additional details (address, bio, preferences) can be fetched on demand
+    # from a database or profile service only when needed.
+</code></pre>
+<h3 id="benefits_1">Benefits</h3>
+<ol>
+<li><strong>Reduced Memory Usage:</strong> Store only essential data in memory-critical paths.</li>
+<li><strong>Load On Demand:</strong> Expensive/large fields are retrieved only when required, improving footprint and cache locality.</li>
+</ol>
+<blockquote>
+<p>Takeaway: question each field; keep the in‑memory representation minimal and fetch the rest lazily.</p>
+</blockquote>
+<hr />
+<p><strong>Overall insight.</strong> Relentless suspicion is about removing every instruction and field that does not measurably contribute to the result. Measure, simplify, and rely on optimized primitives wherever possible.</p>
 
 
 
