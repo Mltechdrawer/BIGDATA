@@ -116,7 +116,8 @@ Key reminders:
 - Measure the impact of each change quantitatively.
 - Understand the hardware, but design for clarity first.
 
-> *Premature optimization is the root of all evil.* — Donald Knuth
+
+[Best Practices: Clean Code](cleancode.md "Clean Code")
 
 ---
 

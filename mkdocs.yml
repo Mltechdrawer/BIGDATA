@@ -17,9 +17,8 @@ nav:
       - Lectures: Block1_Theoretical_Concepts_of_Big_Data/Monitoring_and_Performance_Engineering/lectures.md
       - Applications: Block1_Theoretical_Concepts_of_Big_Data/Monitoring_and_Performance_Engineering/applications.md
     - Architectures for Big Data:
-      - Experiments: Block1_Theoretical_Concepts_of_Big_Data/Architectures_for_Big_Data/experiments.md
-      - Lectures: Block1_Theoretical_Concepts_of_Big_Data/Architectures_for_Big_Data/lectures.md
-      - Applications: Block1_Theoretical_Concepts_of_Big_Data/Architectures_for_Big_Data/applications.md
+      - Fundamentals: Block1_Theoretical_Concepts_of_Big_Data/Architectures_for_Big_Data/fundamentals.md
+      - Architectures: Block1_Theoretical_Concepts_of_Big_Data/Architectures_for_Big_Data/architectures.md
   - Block 2. Distributed and Parallel Programming:
     - Parallel Programming:
       - Experiments: Block2_Distributed_and_Parallel_Programming/Parallel_Programming/experiments.md
