@@ -9,6 +9,8 @@ The progression from Lambda to Kappa and finally to Lakehouse reflects the evolu
 
 ![Lambda Architecture](lambda.png)
 
+*Lambda Architecture*
+
 ### Overview
 
 The Lambda Architecture was proposed to address workloads that require:  
@@ -54,6 +56,9 @@ The results from both streams are merged in a **Serving Layer**, which exposes d
 
 ![Kappa Architecture](kappa.png)
 
+*Kappa Architecture*
+
+
 ### 2.1 Motivation
 
 Kappa Architecture was introduced as a **simplification** of Lambda Architecture.  
@@ -92,6 +97,8 @@ This allows the system to use **only one processing model**: streaming.
 ## Lakehouse Architecture
 
 ![Lakehouse Architecture](lakehouse.png)
+
+*Lakehouse*
 
 ### Background
 
