@@ -1748,11 +1748,11 @@
 <h2 id="motivation-and-challenges-in-big-data">Motivation and Challenges in Big Data</h2>
 <h3 id="the-data-explosion">The Data Explosion</h3>
 <p>In recent years, there has been a dramatic increase in the amount of data generated from digital services, social media, Internet of Things (IoT) devices, enterprise applications, scientific computing, and automation systems. This phenomenon, often referred to as the <strong>data deluge</strong>, has surpassed the processing, storage, and analytical capabilities of traditional computing infrastructures.</p>
-<p>This growth is <strong>exponential</strong>, influenced by:
-- Continuous digitalization of business processes.
-- Proliferation of connected devices and sensors.
-- Increased need for real-time monitoring and decision-making.
-- Generation of detailed logs for observability and auditing.</p>
+<p>This growth is <strong>exponential</strong>, influenced by:<br />
+- Continuous digitalization of business processes.<br />
+- Proliferation of connected devices and sensors.<br />
+- Increased need for real-time monitoring and decision-making.<br />
+- Generation of detailed logs for observability and auditing.  </p>
 <h3 id="the-v-characteristics-of-big-data">The “V” Characteristics of Big Data</h3>
 <p>Big Data is commonly described using five core properties:</p>
 <table>
@@ -1792,33 +1792,51 @@
 </tbody>
 </table>
 <h3 id="limitations-of-traditional-systems">Limitations of Traditional Systems</h3>
-<p>Traditional database and processing architectures rely on:
-- A single centralized server.
-- Local storage on disk.
-- Sequential or limited parallel processing.</p>
-<p>These systems face several issues when scaling:
-- <strong>Performance bottlenecks</strong> in CPU, memory, and I/O.
-- <strong>Vertical scalability limits</strong> (hardware upgrades are costly and reach physical limits).
-- <strong>Single points of failure</strong>, reducing reliability.
-- Inability to efficiently handle unstructured data or real-time workloads.</p>
+<p>Traditional database and processing architectures rely on: </p>
+<ul>
+<li>A single centralized server.  </li>
+<li>Local storage on disk.  </li>
+<li>Sequential or limited parallel processing.  </li>
+</ul>
+<p>These systems face several issues when scaling: </p>
+<ul>
+<li><strong>Performance bottlenecks</strong> in CPU, memory, and I/O.  </li>
+<li><strong>Vertical scalability limits</strong> (hardware upgrades are costly and reach physical limits).  </li>
+<li><strong>Single points of failure</strong>, reducing reliability.  </li>
+<li>Inability to efficiently handle unstructured data or real-time workloads.  </li>
+</ul>
 <h3 id="need-for-new-architectural-approaches">Need for New Architectural Approaches</h3>
-<p>To address these challenges, Big Data systems are designed to:
-- <strong>Distribute data across many nodes</strong>.
-- <strong>Process tasks in parallel</strong>.
-- <strong>Scale horizontally</strong> by adding more machines when demand increases.</p>
-<p>This shift requires both new <strong>computational models</strong> and new <strong>storage strategies</strong>, which are covered in the next sections.</p>
+<p>To address these challenges, Big Data systems are designed to: </p>
+<ul>
+<li><strong>Distribute data across many nodes</strong>.  </li>
+<li><strong>Process tasks in parallel</strong>.  </li>
+<li><strong>Scale horizontally</strong> by adding more machines when demand increases.  </li>
+</ul>
+<p>This shift requires both new <strong>computational models</strong> and new <strong>storage strategies</strong>, which are covered in the next sections.  </p>
+<hr />
+<details>
+<summary>Architecture Common Blocks</summary>
+<p><strong>Data ingestion:</strong>The process of collecting and importing data from various sources into a system where it can be stored, processed, and analyzed.</p>
+<p><strong>Storage</strong> (data lakes, distributed systems)</p>
+<p><strong>Processing</strong> (batch and/or streaming)</p>
+<p><strong>Access, querying, and analytics</strong></p>
+<p><strong>Governance and metadata:</strong>The set of processes and information that ensure data is properly managed, understood, secured, and used consistently across the organization.</p>
+</details>
+
 <hr />
 <h2 id="fundamentals-of-distributed-computing">Fundamentals of Distributed Computing</h2>
 <h3 id="what-is-a-distributed-architecture">What Is a Distributed Architecture?</h3>
-<p>A distributed computing architecture is a system where multiple networked machines (nodes) cooperate to perform computational tasks as if they were a single logical system. Each node typically contributes:
-- CPU resources
-- Memory
-- Storage
-- Network communication capabilities</p>
-<p>The goals are:
-- <strong>Scalability</strong>
-- <strong>Fault tolerance</strong>
-- <strong>High throughput</strong></p>
+<p>A distributed computing architecture is a system where multiple networked machines (nodes) cooperate to perform computational tasks as if they were a single logical system. Each node typically contributes:<br />
+- CPU resources<br />
+- Memory<br />
+- Storage<br />
+- Network communication capabilities  </p>
+<p>The goals are:</p>
+<ul>
+<li><strong>Scalability</strong>  </li>
+<li><strong>Fault tolerance</strong>  </li>
+<li><strong>High throughput</strong>  </li>
+</ul>
 <h3 id="models-of-parallel-and-distributed-computation">Models of Parallel and Distributed Computation</h3>
 <table>
 <thead>
@@ -1882,9 +1900,9 @@
 <p>Batch systems focus on throughput; streaming systems focus on latency.</p>
 <h3 id="amdahls-law-and-scalability-limits">Amdahl’s Law and Scalability Limits</h3>
 <p><strong>Amdahl’s Law</strong> states that the maximum performance improvement of a system by parallelization is limited by the portion of the process that cannot be parallelized.<br />
-This implies that:
-- Adding more nodes does <strong>not always</strong> yield proportional speedups.
-- Efficient Big Data systems require algorithms designed for distributed execution.</p>
+This implies that:<br />
+- Adding more nodes does <strong>not always</strong> yield proportional speedups.<br />
+- Efficient Big Data systems require algorithms designed for distributed execution.  </p>
 <h3 id="virtualization-and-containers">Virtualization and Containers</h3>
 <table>
 <thead>
@@ -1912,12 +1930,14 @@ This implies that:
 </table>
 <p>Containers enable reproducibility, portability, and lightweight deployment.</p>
 <h3 id="container-orchestration-with-kubernetes">Container Orchestration with Kubernetes</h3>
-<p>Key concepts:
-- <strong>Pod</strong>: Minimum deployable execution unit.
-- <strong>Node</strong>: A machine (virtual or physical) in the cluster.
-- <strong>Cluster</strong>: Set of coordinated nodes.
-- <strong>HPA (Horizontal Pod Autoscaler)</strong>: Scales the number of Pod replicas.
-- <strong>VPA (Vertical Pod Autoscaler)</strong>: Adjusts CPU/memory per Pod.</p>
+<p>Key concepts:</p>
+<ul>
+<li><strong>Pod</strong>: Minimum deployable execution unit.  </li>
+<li><strong>Node</strong>: A machine (virtual or physical) in the cluster.  </li>
+<li><strong>Cluster</strong>: Set of coordinated nodes.  </li>
+<li><strong>HPA (Horizontal Pod Autoscaler)</strong>: Scales the number of Pod replicas.  </li>
+<li><strong>VPA (Vertical Pod Autoscaler)</strong>: Adjusts CPU/memory per Pod.  </li>
+</ul>
 <p>Kubernetes is widely used to deploy and scale distributed data platforms.</p>
 <h3 id="cloud-computing-models">Cloud Computing Models</h3>
 <table>
@@ -1950,10 +1970,10 @@ This implies that:
 <hr />
 <h2 id="fundamentals-of-scalable-storage-and-databases">Fundamentals of Scalable Storage and Databases</h2>
 <h3 id="challenges-of-traditional-storage">Challenges of Traditional Storage</h3>
-<p>Single-server storage suffers from:
-- Limited capacity and performance
-- High expansion cost
-- Risk of catastrophic data loss</p>
+<p>Single-server storage suffers from:<br />
+- Limited capacity and performance<br />
+- High expansion cost<br />
+- Risk of catastrophic data loss  </p>
 <h3 id="in-memory-databases">In-Memory Databases</h3>
 <p>In-memory databases store data in RAM to reduce latency and accelerate query processing.</p>
 <p><strong>Advantages</strong>
@@ -2006,26 +2026,26 @@ This implies that:
 <td><strong>NFS (Network File System)</strong></td>
 <td>Centralized</td>
 <td>Limited</td>
-<td>❌ No</td>
+<td>No</td>
 </tr>
 <tr>
 <td><strong>HDFS (Hadoop Distributed File System)</strong></td>
 <td>Replicated block storage</td>
 <td>High</td>
-<td>✅ Yes</td>
+<td>Yes</td>
 </tr>
 <tr>
 <td><strong>Object Storage (e.g., S3, GCS, Azure Blob)</strong></td>
 <td>Flat namespace with HTTP API</td>
 <td>Very high</td>
-<td>✅ Yes</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
 <h3 id="fault-tolerance-and-replication">Fault Tolerance and Replication</h3>
-<p>Distributed storage systems implement:
-- <strong>Data replication</strong> across multiple nodes.
-- <strong>Automatic rebalancing</strong> when nodes fail.</p>
+<p>Distributed storage systems implement:<br />
+- <strong>Data replication</strong> across multiple nodes.<br />
+- <strong>Automatic rebalancing</strong> when nodes fail.  </p>
 <p>These mechanisms are essential for reliability in Big Data environments.</p>
 <hr />
 
