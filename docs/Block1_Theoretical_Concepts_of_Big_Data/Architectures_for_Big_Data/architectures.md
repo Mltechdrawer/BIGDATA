@@ -145,9 +145,9 @@ The **Lakehouse Architecture** aims to combine the strengths of both.
 
 | Architecture | Batch | Streaming | Complexity | Best Use Case |
 |-------------|-------|-----------|------------|---------------|
-| **Lambda** | ✅ | ✅ | High | Systems requiring historical accuracy and real-time data |
-| **Kappa** | ❌ | ✅ | Medium | Event-driven and continuous streaming applications |
-| **Lakehouse** | ✅ | ⚠️ (depends on engine) | Medium | Unified environments for BI and ML with governance |
+| **Lambda** | Yes | Yes | High | Systems requiring historical accuracy and real-time data |
+| **Kappa** | No | Yes | Medium | Event-driven and continuous streaming applications |
+| **Lakehouse** | Yes | Depends on engine | Medium | Unified environments for BI and ML with governance |
 
 ---
 
