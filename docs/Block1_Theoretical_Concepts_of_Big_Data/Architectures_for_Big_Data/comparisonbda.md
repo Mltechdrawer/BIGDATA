@@ -95,7 +95,7 @@ The comparison focuses on processing models, complexity, maintenance, scalabilit
 
 ---
 
-## 8. Practical Recommendation for Most Modern Systems
+## Practical Recommendation for Most Modern Systems
 
 > When building new data platforms today, **Lakehouse** is generally the preferred architecture because it simplifies pipelines, reduces operational burden, and supports both analytics and machine learning under a unified model.
 
