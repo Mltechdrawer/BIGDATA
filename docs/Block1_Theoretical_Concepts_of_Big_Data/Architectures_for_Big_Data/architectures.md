@@ -105,7 +105,10 @@ This allows the system to use **only one processing model**: streaming.
 Traditional **Data Warehouses** enforce strong schema and [ACID](acid.md "ACID") guarantees but are expensive and inflexible.  
 **Data Lakes**, in contrast, store raw data cheaply but lack governance, transactional safety, and can degrade into *data swamps*.  
 
-The **Lakehouse Architecture** aims to combine the strengths of both.  
+The **Lakehouse Architecture** aims to combine the strengths of both. 
+
+[Comparison Storage Systems](comparisonss.md "Comparison Storage Systems")
+
 
 ### Core Characteristics
 
@@ -151,7 +154,7 @@ The **Lakehouse Architecture** aims to combine the strengths of both.
 
 ---
 
-[Comparison](comparison.md "Comparison")
+[Comparison Big Data Architectures](comparisonbda.md "Comparison Big Data Architectures")
 
 [Case Study](case_study.md "Case Study")
 
