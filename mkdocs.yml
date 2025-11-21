@@ -24,10 +24,10 @@ nav:
       - Experiments: Block2_Distributed_and_Parallel_Programming/Parallel_Programming/experiments.md
       - Lectures: Block2_Distributed_and_Parallel_Programming/Parallel_Programming/lectures.md
       - Applications: Block2_Distributed_and_Parallel_Programming/Parallel_Programming/applications.md
-    - Map Reduce:
-      - Experiments: Block2_Distributed_and_Parallel_Programming/Map_Reduce/experiments.md
-      - Lectures: Block2_Distributed_and_Parallel_Programming/Map_Reduce/lectures.md
-      - Applications: Block2_Distributed_and_Parallel_Programming/Map_Reduce/applications.md
+    - Vector Programming:
+      - Experiments: Block2_Distributed_and_Parallel_Programming/Vector_Programming/experiments.md
+      - Lectures: Block2_Distributed_and_Parallel_Programming/Vector_Programming/lectures.md
+      - Applications: Block2_Distributed_and_Parallel_Programming/Vector_Programming/applications.md
     - Distributed File Systems:
       - Experiments: Block2_Distributed_and_Parallel_Programming/Distributed_File_Systems/experiments.md
       - Lectures: Block2_Distributed_and_Parallel_Programming/Distributed_File_Systems/lectures.md
@@ -36,7 +36,7 @@ nav:
       - Experiments: Block2_Distributed_and_Parallel_Programming/Application_Development_for_Big_Data_Clusters/experiments.md
       - Lectures: Block2_Distributed_and_Parallel_Programming/Application_Development_for_Big_Data_Clusters/lectures.md
       - Applications: Block2_Distributed_and_Parallel_Programming/Application_Development_for_Big_Data_Clusters/applications.md
-    - Vector Programming:
-      - Experiments: Block2_Distributed_and_Parallel_Programming/Vector_Programming/experiments.md
-      - Lectures: Block2_Distributed_and_Parallel_Programming/Vector_Programming/lectures.md
-      - Applications: Block2_Distributed_and_Parallel_Programming/Vector_Programming/applications.md
+    - Map Reduce:
+      - Experiments: Block2_Distributed_and_Parallel_Programming/Map_Reduce/experiments.md
+      - Lectures: Block2_Distributed_and_Parallel_Programming/Map_Reduce/lectures.md
+      - Applications: Block2_Distributed_and_Parallel_Programming/Map_Reduce/applications.md    
