@@ -12,7 +12,7 @@
         <link rel="prev" href="../lectures/">
       
       
-        <link rel="next" href="../../Map_Reduce/experiments/">
+        <link rel="next" href="../../Vector_Programming/experiments/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#applications" class="md-skip">
+        <a href="#applications-parallel-programming" class="md-skip">
           Skip to content
         </a>
       
@@ -805,56 +805,152 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#learning-objectives" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      Learning objectives
+      Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#-" class="md-nav__link">
+  <a href="#brief-biography" class="md-nav__link">
     <span class="md-ellipsis">
-      -
+      Brief Biography
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#content" class="md-nav__link">
+  <a href="#histogram-computation-c-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Content
+      Histogram Computation (C++ Example)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#-_1" class="md-nav__link">
+  <a href="#tiled-matrix-multiplication" class="md-nav__link">
     <span class="md-ellipsis">
-      -
+      Tiled Matrix Multiplication
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tiled Matrix Multiplication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Overview:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sorting-networks-and-bitonic-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sorting Networks and Bitonic Sort
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sorting Networks and Bitonic Sort">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Properties:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bitonic-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bitonic Sort:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image-processing-and-parallel-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image Processing and Parallel Algorithms
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
+  <a href="#scientific-simulations-and-n-body-problems" class="md-nav__link">
     <span class="md-ellipsis">
-      Resources
+      Scientific Simulations and N-Body Problems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scientific Simulations and N-Body Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#direct-n-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direct N-Body:
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#suggested-exercises" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#barneshut-algorithm" class="md-nav__link">
     <span class="md-ellipsis">
-      Suggested exercises
+      Barnes–Hut Algorithm:
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#high-performance-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-Performance Applications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="High-Performance Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#closing-remarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closing Remarks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -898,7 +994,7 @@
   
   
   <span class="md-ellipsis">
-    Map Reduce
+    Vector Programming
     
   </span>
   
@@ -909,7 +1005,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
-            Map Reduce
+            Vector Programming
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -920,7 +1016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Map_Reduce/experiments/" class="md-nav__link">
+      <a href="../../Vector_Programming/experiments/" class="md-nav__link">
         
   
   
@@ -943,7 +1039,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Map_Reduce/lectures/" class="md-nav__link">
+      <a href="../../Vector_Programming/lectures/" class="md-nav__link">
         
   
   
@@ -966,7 +1062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Map_Reduce/applications/" class="md-nav__link">
+      <a href="../../Vector_Programming/applications/" class="md-nav__link">
         
   
   
@@ -1243,7 +1339,7 @@
   
   
   <span class="md-ellipsis">
-    Vector Programming
+    Map Reduce
     
   </span>
   
@@ -1254,7 +1350,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_5">
             <span class="md-nav__icon md-icon"></span>
-            Vector Programming
+            Map Reduce
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1265,7 +1361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Vector_Programming/experiments/" class="md-nav__link">
+      <a href="../../Map_Reduce/experiments/" class="md-nav__link">
         
   
   
@@ -1288,7 +1384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Vector_Programming/lectures/" class="md-nav__link">
+      <a href="../../Map_Reduce/lectures/" class="md-nav__link">
         
   
   
@@ -1311,7 +1407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Vector_Programming/applications/" class="md-nav__link">
+      <a href="../../Map_Reduce/applications/" class="md-nav__link">
         
   
   
@@ -1369,56 +1465,152 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#learning-objectives" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      Learning objectives
+      Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#-" class="md-nav__link">
+  <a href="#brief-biography" class="md-nav__link">
     <span class="md-ellipsis">
-      -
+      Brief Biography
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#content" class="md-nav__link">
+  <a href="#histogram-computation-c-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Content
+      Histogram Computation (C++ Example)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#-_1" class="md-nav__link">
+  <a href="#tiled-matrix-multiplication" class="md-nav__link">
     <span class="md-ellipsis">
-      -
+      Tiled Matrix Multiplication
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tiled Matrix Multiplication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Overview:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sorting-networks-and-bitonic-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sorting Networks and Bitonic Sort
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sorting Networks and Bitonic Sort">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Properties:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bitonic-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bitonic Sort:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image-processing-and-parallel-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image Processing and Parallel Algorithms
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
+  <a href="#scientific-simulations-and-n-body-problems" class="md-nav__link">
     <span class="md-ellipsis">
-      Resources
+      Scientific Simulations and N-Body Problems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scientific Simulations and N-Body Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#direct-n-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direct N-Body:
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#suggested-exercises" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#barneshut-algorithm" class="md-nav__link">
     <span class="md-ellipsis">
-      Suggested exercises
+      Barnes–Hut Algorithm:
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#high-performance-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-Performance Applications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="High-Performance Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#closing-remarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closing Remarks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1438,28 +1630,145 @@
 
 
 
-<h1 id="applications">Applications</h1>
+<h1 id="applications-parallel-programming">Applications - Parallel Programming</h1>
+<h2 id="introduction">Introduction</h2>
+<p><img alt="Bjarne Stroustrup " src="../bjarnestroustrup.png" title="Bjarne Stroustrup" /></p>
 <blockquote>
-<p><strong>Summary</strong>: <em>(Fill with PDA content)</em></p>
+<p><em>“Any problem in computer science can be solved with another layer of indirection” — known as the 1st law of computing - Bjarne Stroustrup (1950-)</em> </p>
 </blockquote>
-<h2 id="learning-objectives">Learning objectives</h2>
-<h2 id="-">-</h2>
+<h2 id="brief-biography">Brief Biography</h2>
+<p>Bjarne Stroustrup is a Danish computer scientist best known as the creator of the C++ programming language, developed in the early 1980s while working at Bell Labs. His goal was to combine the efficiency of low-level systems programming with the expressive power of high-level abstractions, a philosophy that shaped C++ and made it foundational in operating systems, compilers, games, finance, and large-scale software. Stroustrup has continued to guide the evolution of modern C++, including its ISO standardization and major revisions such as C++11 and beyond. He is also a prolific author and educator, emphasizing software reliability and performance. Today, his work remains central to high-performance and systems programming worldwide.</p>
+<hr />
+<p>Parallel programming is essential for solving large-scale computational problems where sequential execution is too slow or inefficient. Many real-world applications benefit from dividing data or tasks among multiple processors, allowing simultaneous execution and significant performance improvements. This section presents representative examples of parallel applications based on algorithms, image processing, scientific computing, and high-performance workloads.  </p>
+<hr />
+<h2 id="histogram-computation-c-example">Histogram Computation (C++ Example)</h2>
+<p>Histogram calculation is a common application in image processing.  <br />
+An image consists of a matrix of pixels, each containing three color components:<br />
+- <strong>Red</strong><br />
+- <strong>Green</strong><br />
+- <strong>Blue</strong>  </p>
+<p>Each component ranges from 0 to 255, and a full pixel is typically stored as a 32-bit integer.  </p>
+<p>In a parallel setting:<br />
+- The image is divided into blocks or stripes.<br />
+- Each thread computes a <strong>partial histogram</strong> for its block.<br />
+- Partial results are merged into a shared histogram at the end.  </p>
+<p>This approach:<br />
+- Eliminates contention on shared counters.<br />
+- Scales effectively with the number of cores.<br />
+- Is widely used in photo editing, machine vision, and real-time processing.  </p>
+<hr />
+<h2 id="tiled-matrix-multiplication">Tiled Matrix Multiplication</h2>
+<p>Matrix multiplication is computationally expensive, but highly parallelizable.  </p>
+<h3 id="process-overview">Process Overview:</h3>
+<ol>
+<li>
+<p><strong>Initial Alignment:</strong> <br />
+   Blocks from matrices A and B are aligned according to the tiling strategy.  </p>
+</li>
+<li>
+<p><strong>Block Distribution:</strong>  <br />
+   Each processor receives a tile of A and a tile of B.  </p>
+</li>
+<li>
+<p><strong>Rolling / Shifting:</strong>    </p>
+</li>
+<li>A-blocks are shifted left.  </li>
+<li>
+<p>B-blocks are shifted upward.  <br />
+   This continues across multiple computation steps.  </p>
+</li>
+<li>
+<p><strong>Partial Multiplication:</strong>  <br />
+   Each processor computes its partial output matrix from the assigned blocks.  </p>
+</li>
+<li>
+<p><strong>Iteration:</strong> <br />
+   Steps 3 and 4 repeat until all blocks have been processed.  </p>
+</li>
+<li>
+<p><strong>Agglomeration:</strong> <br />
+   Partial submatrices are combined to form the final result.  </p>
+</li>
+</ol>
+<p>Tiled multiplication:<br />
+- Increases cache efficiency.<br />
+- Reduces memory-bandwidth bottlenecks.<br />
+- Fits naturally into multicore and distributed systems.  </p>
+<hr />
+<h2 id="sorting-networks-and-bitonic-sort">Sorting Networks and Bitonic Sort</h2>
+<p>Sorting networks provide a deterministic parallel method for sorting lists.  </p>
+<h3 id="key-properties">Key Properties:</h3>
 <ul>
-<li></li>
+<li>Comparisons occur simultaneously at multiple positions.  </li>
+<li>A fixed sequence of comparator operations is applied.  </li>
+<li>Ideal for hardware implementations and GPUs.  </li>
 </ul>
-<h2 id="content">Content</h2>
-<h2 id="-_1">-</h2>
+<h3 id="bitonic-sort">Bitonic Sort:</h3>
+<p>Bitonic sort is a classic parallel sorting network:  </p>
+<ol>
+<li>Construct a bitonic sequence (first increasing, then decreasing).  </li>
+<li>Repeatedly apply compare-and-swap operations.  </li>
+<li>Merge the sequence into a fully sorted list.  </li>
+</ol>
+<p>Because interactions are predefined, bitonic sort:<br />
+- Is highly predictable.<br />
+- Can execute many comparisons in parallel.<br />
+- Is widely used in parallel hardware architectures and SIMD/GPU systems.  </p>
+<hr />
+<h2 id="image-processing-and-parallel-algorithms">Image Processing and Parallel Algorithms</h2>
+<p>Image processing tasks often require operations on large matrices of pixels.  <br />
+Examples of parallelizable tasks include:<br />
+- Filtering and convolution<br />
+- Edge detection<br />
+- Histogram equalization<br />
+- Color transformations<br />
+- Compression and encoding  </p>
+<p>Since each pixel or block of pixels can often be processed independently, image processing is a natural fit for parallelism.  </p>
+<hr />
+<h2 id="scientific-simulations-and-n-body-problems">Scientific Simulations and N-Body Problems</h2>
+<p>Simulations involving physical systems—astronomy, molecular dynamics, electricity—often use <strong>N-body algorithms</strong>, where each body interacts with every other body.  </p>
+<h3 id="direct-n-body">Direct N-Body:</h3>
 <ul>
-<li></li>
+<li>Complexity: <strong>O(n²)</strong>  </li>
+<li>Highly parallelizable  </li>
+<li>Significant communication overhead  </li>
 </ul>
-<h2 id="resources">Resources</h2>
+<h3 id="barneshut-algorithm">Barnes–Hut Algorithm:</h3>
 <ul>
-<li></li>
+<li>Uses quad-trees  </li>
+<li>Groups distant bodies as single mass centers  </li>
+<li>Reduces complexity to <strong>O(n log n)</strong>  </li>
+<li>Parallelizable at multiple levels (tree construction, traversal, force calculation)  </li>
 </ul>
-<h2 id="suggested-exercises">Suggested exercises</h2>
+<p>These applications require:<br />
+- Domain decomposition<br />
+- Efficient communication strategies<br />
+- Careful balancing of computation vs communication  </p>
+<hr />
+<h2 id="high-performance-applications">High-Performance Applications</h2>
+<p>Examples of heavy computational workloads benefiting from parallel programming include:  </p>
 <ul>
-<li></li>
+<li>Weather forecasting and climate simulation    </li>
+<li>Monte Carlo stochastic simulations    </li>
+<li>Discrete Fourier Transform (DFT)    </li>
+<li>Genetic algorithms    </li>
+<li>Big Data analytics    </li>
+<li>Signal processing and telecommunications    </li>
+<li>Scientific rendering and visualization    </li>
 </ul>
+<p>These tasks:<br />
+- Often run on multicore CPUs, GPUs, or distributed clusters.<br />
+- Require careful algorithm design to achieve good scalability.<br />
+- Benefit from frameworks that support parallel execution models.  </p>
+<hr />
+<h3 id="closing-remarks">Closing Remarks</h3>
+<p>Parallel applications demonstrate the power of dividing work among multiple processing units.  <br />
+Key takeaways:<br />
+- Many computational tasks naturally lend themselves to parallel decomposition.<br />
+- Effective parallel algorithms require balancing workload and minimizing communication.<br />
+- Real-world performance depends heavily on both algorithmic structure and system architecture.  </p>
+<p>Parallel programming remains a critical skill for modern computing—especially in data-intensive and performance-critical environments.  </p>
+<hr />
 
 
 

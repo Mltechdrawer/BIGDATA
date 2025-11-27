@@ -12,6 +12,8 @@
         <link rel="prev" href="../lectures/">
       
       
+        <link rel="next" href="../../Distributed_File_Systems/experiments/">
+      
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
@@ -62,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#applications" class="md-skip">
+        <a href="#applications-vector-programming" class="md-skip">
           Skip to content
         </a>
       
@@ -779,18 +781,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
         
           
           <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
@@ -798,7 +802,7 @@
   
   
   <span class="md-ellipsis">
-    Map Reduce
+    Vector Programming
     
   </span>
   
@@ -806,10 +810,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
-            Map Reduce
+            Vector Programming
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -820,7 +824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Map_Reduce/experiments/" class="md-nav__link">
+      <a href="../experiments/" class="md-nav__link">
         
   
   
@@ -843,7 +847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Map_Reduce/lectures/" class="md-nav__link">
+      <a href="../lectures/" class="md-nav__link">
         
   
   
@@ -863,10 +867,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Map_Reduce/applications/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Applications
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -877,6 +903,284 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#brief-biography" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brief Biography
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scientific-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scientific Computing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scientific Computing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-vector-programming-helps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Vector Programming Helps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#machine-learning-and-deep-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine Learning and Deep Learning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Machine Learning and Deep Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-areas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Areas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vector-programming-advantages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Programming Advantages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-analytics-and-big-data-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Analytics and Big Data Processing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Analytics and Big Data Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#computer-graphics-and-image-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Computer Graphics and Image Processing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Computer Graphics and Image Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vector-friendly-workloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector-Friendly Workloads
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-simdsimt-fits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why SIMD/SIMT Fits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#signal-and-audio-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signal and Audio Processing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Signal and Audio Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applications
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectorization-gains" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vectorization Gains
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#computational-finance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Computational Finance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Computational Finance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-vector-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advantages of Vector Programming
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bioinformatics-and-computational-biology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bioinformatics and Computational Biology
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bioinformatics and Computational Biology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vector-programming-impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Programming Impact
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1124,20 +1428,18 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
         
           
           <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
@@ -1145,7 +1447,7 @@
   
   
   <span class="md-ellipsis">
-    Vector Programming
+    Map Reduce
     
   </span>
   
@@ -1153,10 +1455,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_5">
             <span class="md-nav__icon md-icon"></span>
-            Vector Programming
+            Map Reduce
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1167,7 +1469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../experiments/" class="md-nav__link">
+      <a href="../../Map_Reduce/experiments/" class="md-nav__link">
         
   
   
@@ -1190,7 +1492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lectures/" class="md-nav__link">
+      <a href="../../Map_Reduce/lectures/" class="md-nav__link">
         
   
   
@@ -1210,32 +1512,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Applications
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Map_Reduce/applications/" class="md-nav__link">
         
   
   
@@ -1246,80 +1526,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#learning-objectives" class="md-nav__link">
-    <span class="md-ellipsis">
-      Learning objectives
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#-" class="md-nav__link">
-    <span class="md-ellipsis">
-      -
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#content" class="md-nav__link">
-    <span class="md-ellipsis">
-      Content
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#-_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      -
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Resources
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#suggested-exercises" class="md-nav__link">
-    <span class="md-ellipsis">
-      Suggested exercises
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1367,54 +1573,258 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#learning-objectives" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      Learning objectives
+      Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#-" class="md-nav__link">
+  <a href="#brief-biography" class="md-nav__link">
     <span class="md-ellipsis">
-      -
+      Brief Biography
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#content" class="md-nav__link">
+  <a href="#scientific-computing" class="md-nav__link">
     <span class="md-ellipsis">
-      Content
+      Scientific Computing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scientific Computing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Use Cases
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#-_1" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#why-vector-programming-helps" class="md-nav__link">
     <span class="md-ellipsis">
-      -
+      Why Vector Programming Helps
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Resources
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#suggested-exercises" class="md-nav__link">
+  <a href="#machine-learning-and-deep-learning" class="md-nav__link">
     <span class="md-ellipsis">
-      Suggested exercises
+      Machine Learning and Deep Learning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Machine Learning and Deep Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-areas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Areas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vector-programming-advantages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Programming Advantages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-analytics-and-big-data-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Analytics and Big Data Processing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Analytics and Big Data Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#computer-graphics-and-image-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Computer Graphics and Image Processing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Computer Graphics and Image Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vector-friendly-workloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector-Friendly Workloads
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-simdsimt-fits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why SIMD/SIMT Fits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#signal-and-audio-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signal and Audio Processing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Signal and Audio Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applications
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vectorization-gains" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vectorization Gains
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#computational-finance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Computational Finance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Computational Finance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-vector-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advantages of Vector Programming
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bioinformatics-and-computational-biology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bioinformatics and Computational Biology
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bioinformatics and Computational Biology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vector-programming-impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Programming Impact
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
     </span>
   </a>
   
@@ -1436,28 +1846,150 @@
 
 
 
-<h1 id="applications">Applications</h1>
+<h1 id="applications-vector-programming">Applications  -  Vector Programming</h1>
+<h2 id="introduction">Introduction</h2>
+<p><img alt="Jack Dongarra" src="../jackdongarra.png" title="Jack Dongarra" /></p>
 <blockquote>
-<p><strong>Summary</strong>: <em>(Fill with PDA content)</em></p>
+<p><em>Performance improvements come from embracing parallelism, not avoiding it. — Jack Dongarra, (1950-)</em>  </p>
 </blockquote>
-<h2 id="learning-objectives">Learning objectives</h2>
-<h2 id="-">-</h2>
+<h2 id="brief-biography">Brief Biography</h2>
+<p>Jack Dongarra is an American computer scientist renowned for his foundational contributions to numerical linear algebra and high-performance computing. He led the development of key mathematical software libraries—including BLAS, LAPACK, and LINPACK—which remain essential to scientific computing and vectorized numerical workloads. Dongarra also co-created the TOP500 list, shaping how the world evaluates supercomputer performance. His work enabled scalable parallel computation and influenced modern GPU, multicore, and distributed architectures. In 2021, he received the ACM Turing Award for his profound impact on computational science.</p>
+<hr />
+<p>Vector programming enables high-throughput computation by applying a single operation to multiple data elements simultaneously. Modern vector-capable architectures—including GPUs, vector supercomputers, and SIMD extensions in CPUs—make this model fundamental in many performance-critical domains.</p>
+<hr />
+<h2 id="scientific-computing">Scientific Computing</h2>
+<p>Scientific applications frequently involve operations that can be expressed as vector transformations on large datasets.</p>
+<h3 id="common-use-cases">Common Use Cases</h3>
 <ul>
-<li></li>
+<li><strong>Numerical linear algebra</strong> (vector–matrix and matrix–matrix operations)  </li>
+<li>Example: LU/QR factorizations, eigenvalue problems  </li>
+<li><strong>Finite-difference and finite-element simulations</strong>  </li>
+<li>Heat diffusion, fluid mechanics, wave propagation  </li>
+<li><strong>Molecular dynamics</strong>  </li>
+<li>Force computations over large particle sets  </li>
+<li><strong>Climate and weather modeling</strong>  </li>
+<li>Massive grid-based computations</li>
 </ul>
-<h2 id="content">Content</h2>
-<h2 id="-_1">-</h2>
+<h3 id="why-vector-programming-helps">Why Vector Programming Helps</h3>
+<p>These workloads rely on repeated, homogeneous operations across large arrays—ideal for SIMD/SIMT execution.</p>
+<p><strong>Reference:</strong><br />
+NVIDIA CUDA Mathematical Libraries — https://developer.nvidia.com/gpu-accelerated-libs</p>
+<hr />
+<h2 id="machine-learning-and-deep-learning">Machine Learning and Deep Learning</h2>
+<p>Deep learning is naturally vectorized. Most operations in neural networks are tensor transformations, allowing GPU tensor cores to deliver substantial throughput.</p>
+<h3 id="key-areas">Key Areas</h3>
 <ul>
-<li></li>
+<li><strong>Training deep neural networks</strong> using large batches of data  </li>
+<li><strong>Inference acceleration</strong> on GPUs and specialized hardware  </li>
+<li><strong>Matrix-heavy layers</strong>  </li>
+<li>Dense layers (GEMM)  </li>
+<li>Convolutions (implemented via blocked matrix multiplications)  </li>
+<li>Attention mechanisms in transformers</li>
 </ul>
-<h2 id="resources">Resources</h2>
+<h3 id="vector-programming-advantages">Vector Programming Advantages</h3>
 <ul>
-<li></li>
+<li>High data parallelism  </li>
+<li>Efficient tensor operations  </li>
+<li>Hardware-supported mixed-precision computing</li>
 </ul>
-<h2 id="suggested-exercises">Suggested exercises</h2>
+<p><strong>Reference:</strong><br />
+cuDNN: NVIDIA Deep Neural Network Library — https://developer.nvidia.com/cudnn</p>
+<hr />
+<h2 id="data-analytics-and-big-data-processing">Data Analytics and Big Data Processing</h2>
+<p>Big data workloads frequently involve operations performed over entire vectors or columns of datasets.</p>
+<h3 id="examples">Examples</h3>
 <ul>
-<li></li>
+<li><strong>Columnar processing in databases</strong> (SIMD scans, selections, aggregates)  </li>
+<li><strong>Vectorized SQL engines</strong> (e.g., Spark, DuckDB, ClickHouse)  </li>
+<li><strong>ETL pipelines</strong> that transform large arrays of numeric or categorical data  </li>
+<li><strong>Statistical computations</strong>  </li>
+<li>Means, variances, correlations  </li>
+<li>Histogramming and binning</li>
 </ul>
+<h3 id="benefits">Benefits</h3>
+<ul>
+<li>Reduced interpretation overhead  </li>
+<li>High memory bandwidth utilization  </li>
+<li>Efficient batch operations</li>
+</ul>
+<p><strong>Reference:</strong><br />
+Apache Arrow (columnar vector format) — https://arrow.apache.org/</p>
+<hr />
+<h2 id="computer-graphics-and-image-processing">Computer Graphics and Image Processing</h2>
+<p>Graphics systems have historically been a primary driver of vector hardware development.</p>
+<h3 id="vector-friendly-workloads">Vector-Friendly Workloads</h3>
+<ul>
+<li><strong>Image filters</strong> (convolutions, edge detection, sharpening)  </li>
+<li><strong>Color space transformations</strong>  </li>
+<li><strong>Geometric transformations</strong> (scaling, rotation, translation)  </li>
+<li><strong>Real-time rendering pipelines</strong></li>
+</ul>
+<h3 id="why-simdsimt-fits">Why SIMD/SIMT Fits</h3>
+<p>Pixels, vertices, and fragments can be processed independently, making them ideal for vector pipelines.</p>
+<p><strong>Reference:</strong><br />
+OpenGL Shading Language (GLSL) — https://www.khronos.org/opengl/wiki/Core_Language_(GLSL)</p>
+<hr />
+<h2 id="signal-and-audio-processing">Signal and Audio Processing</h2>
+<p>Digital signal processing involves repetitive numerical operations over signals represented as vectors.</p>
+<h3 id="applications">Applications</h3>
+<ul>
+<li><strong>Fast Fourier Transform (FFT)</strong>  </li>
+<li><strong>Digital filters</strong> (FIR, IIR)  </li>
+<li><strong>Spectral analysis</strong>  </li>
+<li><strong>Audio synthesis and effects</strong></li>
+</ul>
+<h3 id="vectorization-gains">Vectorization Gains</h3>
+<ul>
+<li>Parallel computation of frequency bins  </li>
+<li>Highly regular memory access patterns  </li>
+<li>Repeated operations over contiguous segments of data</li>
+</ul>
+<p><strong>Reference:</strong><br />
+cuFFT: CUDA Fast Fourier Transform Library — https://developer.nvidia.com/cufft</p>
+<hr />
+<h2 id="computational-finance">Computational Finance</h2>
+<p>Financial models often require large-scale simulation or evaluation of independent scenarios.</p>
+<h3 id="examples_1">Examples</h3>
+<ul>
+<li><strong>Monte Carlo simulations</strong> for pricing derivatives  </li>
+<li><strong>Risk analysis</strong> (VaR, CVaR)  </li>
+<li><strong>Portfolio optimization</strong>  </li>
+<li><strong>Stochastic differential equations</strong></li>
+</ul>
+<h3 id="advantages-of-vector-programming">Advantages of Vector Programming</h3>
+<ul>
+<li>Independence among simulation paths → highly parallelizable  </li>
+<li>Vector operations reduce time-to-solution in risk-critical computations</li>
+</ul>
+<p><strong>Reference:</strong><br />
+NVIDIA GPU Finance Applications — https://developer.nvidia.com/finance</p>
+<hr />
+<h2 id="bioinformatics-and-computational-biology">Bioinformatics and Computational Biology</h2>
+<p>Large biological datasets are inherently suitable for vector processing.</p>
+<h3 id="use-cases">Use Cases</h3>
+<ul>
+<li><strong>Sequence alignment</strong> (Smith–Waterman, Needleman–Wunsch)  </li>
+<li><strong>Genome assembly</strong>  </li>
+<li><strong>Read mapping</strong>  </li>
+<li><strong>Protein folding simulations</strong></li>
+</ul>
+<h3 id="vector-programming-impact">Vector Programming Impact</h3>
+<ul>
+<li>Massive acceleration of pattern-matching kernels  </li>
+<li>SIMD implementations of scoring matrices  </li>
+<li>GPU-accelerated dynamic programming</li>
+</ul>
+<p><strong>Reference:</strong><br />
+NVIDIA Clara for Genomics — https://developer.nvidia.com/clara-genomics-analysis</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>Vector programming enables high-performance computation across diverse application domains by:</p>
+<ul>
+<li>Applying uniform operations to large datasets  </li>
+<li>Leveraging SIMD/SIMT models for throughput  </li>
+<li>Exploiting specialized hardware (vector units, CUDA cores, tensor cores)  </li>
+</ul>
+<p>Its broad range of use cases includes scientific computing, deep learning, analytics, graphics, signal processing, finance, and bioinformatics.</p>
 
 
 
