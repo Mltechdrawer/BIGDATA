@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../lectures/">
+        <link rel="prev" href="../fundamentals/">
       
       
         <link rel="next" href="../../Application_Development_for_Big_Data_Clusters/experiments/">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Applications - Big Data</title>
+        <title>Distributed File Systems - Big Data</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#applications" class="md-skip">
+        <a href="#distributed-file-systems" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Applications
+              Distributed File Systems
             
           </span>
         </div>
@@ -939,35 +939,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../experiments/" class="md-nav__link">
+      <a href="../fundamentals/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Experiments
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../lectures/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Lectures
+    Fundamentals
     
   </span>
   
@@ -999,7 +976,7 @@
   
   
   <span class="md-ellipsis">
-    Applications
+    Distributed File Systems
     
   </span>
   
@@ -1012,7 +989,7 @@
   
   
   <span class="md-ellipsis">
-    Applications
+    Distributed File Systems
     
   </span>
   
@@ -1035,54 +1012,204 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#learning-objectives" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      Learning objectives
+      Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#-" class="md-nav__link">
+  <a href="#key-characteristics" class="md-nav__link">
     <span class="md-ellipsis">
-      -
+      Key Characteristics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Characteristics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transparency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transparency
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scalability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scalability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fault-tolerance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fault Tolerance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consistency-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consistency Models
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dfs-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      DFS Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DFS Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metadata-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metadata Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-chunking-and-replication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Chunking and Replication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Considerations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#representative-distributed-file-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Representative Distributed File Systems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Representative Distributed File Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hdfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      HDFS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google-file-system-gfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Google File System (GFS)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cephfs-and-glusterfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      CephFS and GlusterFS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-based-storage-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloud-Based Storage Systems
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dfs-and-distributed-computation" class="md-nav__link">
+    <span class="md-ellipsis">
+      DFS and Distributed Computation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DFS and Distributed Computation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-locality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Locality
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scalability-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scalability Analysis
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#content" class="md-nav__link">
+  <a href="#performance-considerations" class="md-nav__link">
     <span class="md-ellipsis">
-      Content
+      Performance Considerations
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#-_1" class="md-nav__link">
+  <a href="#real-world-applications" class="md-nav__link">
     <span class="md-ellipsis">
-      -
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Resources
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#suggested-exercises" class="md-nav__link">
-    <span class="md-ellipsis">
-      Suggested exercises
+      Real-World Applications
     </span>
   </a>
   
@@ -1369,54 +1496,204 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#learning-objectives" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      Learning objectives
+      Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#-" class="md-nav__link">
+  <a href="#key-characteristics" class="md-nav__link">
     <span class="md-ellipsis">
-      -
+      Key Characteristics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Characteristics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transparency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transparency
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scalability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scalability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fault-tolerance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fault Tolerance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consistency-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consistency Models
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dfs-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      DFS Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DFS Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metadata-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metadata Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-chunking-and-replication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Chunking and Replication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Considerations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#representative-distributed-file-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Representative Distributed File Systems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Representative Distributed File Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hdfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      HDFS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google-file-system-gfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Google File System (GFS)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cephfs-and-glusterfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      CephFS and GlusterFS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-based-storage-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloud-Based Storage Systems
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dfs-and-distributed-computation" class="md-nav__link">
+    <span class="md-ellipsis">
+      DFS and Distributed Computation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DFS and Distributed Computation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-locality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Locality
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scalability-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scalability Analysis
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#content" class="md-nav__link">
+  <a href="#performance-considerations" class="md-nav__link">
     <span class="md-ellipsis">
-      Content
+      Performance Considerations
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#-_1" class="md-nav__link">
+  <a href="#real-world-applications" class="md-nav__link">
     <span class="md-ellipsis">
-      -
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Resources
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#suggested-exercises" class="md-nav__link">
-    <span class="md-ellipsis">
-      Suggested exercises
+      Real-World Applications
     </span>
   </a>
   
@@ -1438,27 +1715,70 @@
 
 
 
-<h1 id="applications">Applications</h1>
-<blockquote>
-<p><strong>Summary</strong>: <em>(Fill with PDA content)</em></p>
-</blockquote>
-<h2 id="learning-objectives">Learning objectives</h2>
-<h2 id="-">-</h2>
+<h1 id="distributed-file-systems">Distributed File Systems</h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Distributed File System (DFS) allows users and applications to store, access, and manage data distributed across multiple machines as if it were a single file system.  </p>
+<p>DFSs are essential in Big Data environments where datasets exceed the capacity of individual machines.</p>
+<h2 id="key-characteristics">Key Characteristics</h2>
+<h3 id="transparency">Transparency</h3>
+<p>DFSs provide: </p>
 <ul>
-<li></li>
+<li><strong>Location transparency</strong>  </li>
+<li><strong>Replication transparency</strong>  </li>
+<li><strong>Concurrency transparency</strong>  </li>
 </ul>
-<h2 id="content">Content</h2>
-<h2 id="-_1">-</h2>
+<h3 id="scalability">Scalability</h3>
+<p>DFSs scale horizontally by adding nodes, maintaining performance with growing data volume.</p>
+<h3 id="fault-tolerance">Fault Tolerance</h3>
+<p>Through replication, DFSs remain operational even when nodes fail.</p>
+<h3 id="consistency-models">Consistency Models</h3>
+<p>DFSs may rely on strong or eventual consistency depending on design.</p>
+<h2 id="dfs-architecture">DFS Architecture</h2>
+<h3 id="metadata-management">Metadata Management</h3>
 <ul>
-<li></li>
+<li><strong>Master–worker architecture</strong> (e.g., HDFS)    </li>
+<li><strong>Decentralized metadata</strong> (e.g., CephFS)  </li>
 </ul>
-<h2 id="resources">Resources</h2>
+<h3 id="data-chunking-and-replication">Data Chunking and Replication</h3>
+<p>Files are split into large blocks stored across multiple nodes.</p>
+<h3 id="network-considerations">Network Considerations</h3>
+<p>Throughput and latency heavily influence DFS performance.</p>
+<h2 id="representative-distributed-file-systems">Representative Distributed File Systems</h2>
+<h3 id="hdfs">HDFS</h3>
+<p>Optimized for high-throughput workloads and large-scale batch processing.</p>
+<h3 id="google-file-system-gfs">Google File System (GFS)</h3>
+<p>Pioneered design principles used by many modern DFSs.</p>
+<h3 id="cephfs-and-glusterfs">CephFS and GlusterFS</h3>
+<p>Highly scalable systems with decentralized metadata architectures.</p>
+<h3 id="cloud-based-storage-systems">Cloud-Based Storage Systems</h3>
+<p>Amazon S3, Azure Blob Storage, and Google Cloud Storage offer global, scalable storage with DFS-like behavior.</p>
+<h2 id="dfs-and-distributed-computation">DFS and Distributed Computation</h2>
+<p>DFSs form the foundation of Big Data frameworks:<br />
+- Enable parallel processing  <br />
+- Ensure data availability across nodes  <br />
+- Support algorithms such as distributed matrix multiplication    </p>
+<h3 id="data-locality">Data Locality</h3>
+<p>Frameworks aim to schedule tasks near the data to reduce network cost.</p>
+<h2 id="scalability-analysis">Scalability Analysis</h2>
 <ul>
-<li></li>
+<li>Impact of cluster size    </li>
+<li>Metadata bottlenecks    </li>
+<li>Replication factor trade-offs    </li>
+<li>Balancing performance and fault tolerance    </li>
 </ul>
-<h2 id="suggested-exercises">Suggested exercises</h2>
+<h2 id="performance-considerations">Performance Considerations</h2>
 <ul>
-<li></li>
+<li>Network overhead    </li>
+<li>Block size choice    </li>
+<li>Resource utilization (disk, memory, bandwidth)    </li>
+<li>Stragglers affecting distributed workloads    </li>
+</ul>
+<h2 id="real-world-applications">Real-World Applications</h2>
+<ul>
+<li>Hadoop and Spark ecosystems    </li>
+<li>High-performance computing    </li>
+<li>Machine learning pipelines    </li>
+<li>Scientific workflows    </li>
 </ul>
 
 
