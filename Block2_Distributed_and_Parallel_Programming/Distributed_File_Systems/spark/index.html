@@ -16,7 +16,7 @@
     
     
       
-        <title>Hadoop Essentials - Big Data</title>
+        <title>Spark Essentials - Big Data</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hadoop-essentials" class="md-skip">
+        <a href="#spark-essentials" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Hadoop Essentials
+              Spark Essentials
             
           </span>
         </div>
@@ -1251,37 +1251,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#core-components" class="md-nav__link">
+  <a href="#spark-architecture-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Core Components
+      Spark Architecture Overview
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Core Components">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-abstractions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Abstractions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Abstractions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hdfs-hadoop-distributed-file-system" class="md-nav__link">
+  <a href="#rdd-resilient-distributed-dataset" class="md-nav__link">
     <span class="md-ellipsis">
-      HDFS (Hadoop Distributed File System)
+      RDD (Resilient Distributed Dataset)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#yarn-yet-another-resource-negotiator" class="md-nav__link">
+  <a href="#dataframes-and-spark-sql" class="md-nav__link">
     <span class="md-ellipsis">
-      YARN (Yet Another Resource Negotiator)
+      DataFrames and Spark SQL
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#mapreduce" class="md-nav__link">
+  <a href="#datasets-mainly-scalajava" class="md-nav__link">
     <span class="md-ellipsis">
-      MapReduce
+      Datasets (mainly Scala/Java)
     </span>
   </a>
   
@@ -1293,46 +1302,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hdfs-basics" class="md-nav__link">
+  <a href="#laziness-transformations-and-actions" class="md-nav__link">
     <span class="md-ellipsis">
-      HDFS Basics
+      Laziness, Transformations, and Actions
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="HDFS Basics">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started-with-pyspark" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started with PySpark
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started with PySpark">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#architecture" class="md-nav__link">
+  <a href="#creating-a-sparksession-pyspark" class="md-nav__link">
     <span class="md-ellipsis">
-      Architecture
+      Creating a SparkSession (PySpark)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#blocks-and-replication" class="md-nav__link">
+  <a href="#reading-data-from-hdfs-or-local" class="md-nav__link">
     <span class="md-ellipsis">
-      Blocks and Replication
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fault-tolerance" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fault Tolerance
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#when-to-use-hdfs" class="md-nav__link">
-    <span class="md-ellipsis">
-      When to Use HDFS
+      Reading Data from HDFS (or Local)
     </span>
   </a>
   
@@ -1344,93 +1344,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mapreduce-overview" class="md-nav__link">
+  <a href="#example-1-wordcount-with-rdds" class="md-nav__link">
     <span class="md-ellipsis">
-      MapReduce Overview
+      Example 1 – WordCount with RDDs
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="MapReduce Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#map-phase" class="md-nav__link">
-    <span class="md-ellipsis">
-      Map Phase
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#shuffle-phase" class="md-nav__link">
-    <span class="md-ellipsis">
-      Shuffle Phase
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#reduce-phase" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reduce Phase
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#practical-examples" class="md-nav__link">
+  <a href="#example-2-aggregations-with-dataframes" class="md-nav__link">
     <span class="md-ellipsis">
-      Practical Examples
+      Example 2 – Aggregations with DataFrames
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Practical Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-1-basic-hdfs-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example 1: Basic HDFS Commands
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-2-wordcount-with-hadoop-streaming-python" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example 2: WordCount with Hadoop Streaming (Python)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-3-scalability-experiment-suggested" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example 3: Scalability Experiment (Suggested)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#hadoop-vs-spark-context-for-next-topic" class="md-nav__link">
+  <a href="#caching-and-performance" class="md-nav__link">
     <span class="md-ellipsis">
-      Hadoop vs. Spark (Context for Next Topic)
+      Caching and Performance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spark-vs-hadoop-mapreduce" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spark vs. Hadoop MapReduce
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-streaming-example-structured-streaming-conceptual" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple Streaming Example (Structured Streaming – Conceptual)
     </span>
   </a>
   
@@ -1461,115 +1413,127 @@
 
 
 
-<h1 id="hadoop-essentials">Hadoop Essentials</h1>
+<h1 id="spark-essentials">Spark Essentials</h1>
 <h2 id="introduction">Introduction</h2>
-<p>Hadoop is an open-source framework designed for distributed storage and batch processing of large datasets.<br />
-It was created to address the limitations of single-machine computing and was inspired by technologies such as the Google File System (GFS) and the MapReduce programming model.</p>
-<p>Hadoop became the foundation of the early Big Data ecosystem by enabling scalable, fault‑tolerant processing across clusters of commodity machines.</p>
+<p>Apache Spark is a unified analytics engine for large-scale data processing.<br />
+It provides fast in-memory computation, high-level APIs, and libraries for SQL, machine learning, graph processing, and streaming.</p>
+<p>Spark was designed to overcome the limitations of disk-based batch systems such as Hadoop MapReduce, enabling interactive analysis and iterative algorithms on large datasets.</p>
 <hr />
-<h2 id="core-components">Core Components</h2>
-<h3 id="hdfs-hadoop-distributed-file-system"><strong>HDFS (Hadoop Distributed File System)</strong></h3>
-<p>A distributed, fault-tolerant file system designed to store very large files across multiple machines.</p>
-<h3 id="yarn-yet-another-resource-negotiator"><strong>YARN (Yet Another Resource Negotiator)</strong></h3>
-<p>The cluster manager responsible for scheduling and allocating resources for distributed applications.</p>
-<h3 id="mapreduce"><strong>MapReduce</strong></h3>
-<p>A programming model for large-scale batch processing using:<br />
-- <strong>Map</strong>: parallel processing of data blocks  <br />
-- <strong>Shuffle</strong>: grouping intermediate key-value pairs  <br />
-- <strong>Reduce</strong>: aggregating results    </p>
+<h2 id="spark-architecture-overview">Spark Architecture Overview</h2>
+<p>A Spark application typically consists of:</p>
+<ul>
+<li><strong>Driver</strong>: coordinates the execution, defines transformations and actions.</li>
+<li><strong>Executors</strong>: run tasks on worker nodes and store data in memory or on disk.</li>
+<li><strong>Cluster manager</strong>: allocates resources (YARN, Kubernetes, standalone, etc.).</li>
+</ul>
+<p>Spark follows a <strong>master–worker</strong> architecture and expresses computations as a <strong>DAG (Directed Acyclic Graph)</strong> of stages and tasks.</p>
 <hr />
-<h2 id="hdfs-basics">HDFS Basics</h2>
-<h3 id="architecture"><strong>Architecture</strong></h3>
+<h2 id="core-abstractions">Core Abstractions</h2>
+<h3 id="rdd-resilient-distributed-dataset">RDD (Resilient Distributed Dataset)</h3>
 <ul>
-<li><strong>NameNode</strong>: manages metadata (namespace, file locations)</li>
-<li><strong>DataNodes</strong>: store actual data blocks</li>
-<li><strong>Secondary NameNode</strong>: periodically merges metadata snapshots (not a backup NameNode)</li>
+<li>Low-level, distributed collection of objects.</li>
+<li>Immutable, partitioned, and fault-tolerant.</li>
+<li>Supports transformations (e.g., <code>map</code>, <code>filter</code>, <code>flatMap</code>) and actions (e.g., <code>count</code>, <code>collect</code>).</li>
 </ul>
-<h3 id="blocks-and-replication"><strong>Blocks and Replication</strong></h3>
+<h3 id="dataframes-and-spark-sql">DataFrames and Spark SQL</h3>
 <ul>
-<li>Default block size: 128 MB or 256 MB    </li>
-<li>Default replication factor: 3    </li>
-<li>Replication ensures fault tolerance and availability  </li>
+<li>Higher-level abstraction built on top of RDDs.</li>
+<li>Similar to tables in relational databases.</li>
+<li>Schema-aware and optimized by the <strong>Catalyst</strong> query optimizer.</li>
+<li>Exposed through SQL-like operations and DataFrame API.</li>
 </ul>
-<h3 id="fault-tolerance"><strong>Fault Tolerance</strong></h3>
-<p>If a DataNode fails, HDFS reconstructs missing replicas automatically.</p>
-<h3 id="when-to-use-hdfs"><strong>When to Use HDFS</strong></h3>
+<h3 id="datasets-mainly-scalajava">Datasets (mainly Scala/Java)</h3>
 <ul>
-<li>Large, sequential reads    </li>
-<li>Batch computations    </li>
-<li>Write-once, read-many workloads    </li>
+<li>Strongly typed collections combining RDD-like type safety with DataFrame optimizations.</li>
 </ul>
 <hr />
-<h2 id="mapreduce-overview">MapReduce Overview</h2>
-<p>MapReduce structures processing into two main steps:</p>
-<h3 id="map-phase"><strong>Map Phase</strong></h3>
-<p>Takes input data and transforms it into intermediate key-value pairs.</p>
-<h3 id="shuffle-phase"><strong>Shuffle Phase</strong></h3>
-<p>Redistributes intermediate data to group identical keys.</p>
-<h3 id="reduce-phase"><strong>Reduce Phase</strong></h3>
-<p>Aggregates or processes all values associated with a key.</p>
-<hr />
-<h2 id="practical-examples">Practical Examples</h2>
-<h3 id="example-1-basic-hdfs-commands"><strong>Example 1: Basic HDFS Commands</strong></h3>
-<p>Create a directory:</p>
-<pre><code>hdfs dfs -mkdir /bigdata
-</code></pre>
-<p>Upload data:</p>
-<pre><code>hdfs dfs -put localfile.txt /bigdata/
-</code></pre>
-<p>List files:</p>
-<pre><code>hdfs dfs -ls /bigdata
-</code></pre>
-<p>Read a file:</p>
-<pre><code>hdfs dfs -cat /bigdata/localfile.txt
-</code></pre>
-<h3 id="example-2-wordcount-with-hadoop-streaming-python"><strong>Example 2: WordCount with Hadoop Streaming (Python)</strong></h3>
-<p><strong>mapper.py</strong></p>
-<pre><code class="language-python">import sys
-
-for line in sys.stdin:
-    for word in line.strip().split():
-        print(f&quot;{word}  1&quot;)
-</code></pre>
-<p><strong>reducer.py</strong></p>
-<pre><code class="language-python">import sys
-
-current = None
-count = 0
-
-for line in sys.stdin:
-    word, n = line.strip().split(&quot;\t&quot;)
-    n = int(n)
-    if word == current:
-        count += n
-    else:
-        if current:
-            print(f&quot;{current}\t{count}&quot;)
-        current = word
-        count = n
-
-if current:
-    print(f&quot;{current}\t{count}&quot;)
-</code></pre>
-<p>Run the job:</p>
-<pre><code>hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar   -input /bigdata/input.txt   -output /bigdata/output   -mapper mapper.py   -reducer reducer.py
-</code></pre>
-<h3 id="example-3-scalability-experiment-suggested"><strong>Example 3: Scalability Experiment (Suggested)</strong></h3>
-<p>Students can:</p>
+<h2 id="laziness-transformations-and-actions">Laziness, Transformations, and Actions</h2>
+<p>Spark uses <strong>lazy evaluation</strong>:</p>
 <ul>
-<li>Process files of increasing sizes (e.g., 1 GB → 5 GB → 10 GB)    </li>
-<li>Measure execution time   </li>
-<li>
-<p>Analyze:</p>
-</li>
-<li>
-<p>Impact of block size</p>
-</li>
-<li>Network overhead during shuffle</li>
-<li>Influence of slow nodes (stragglers)</li>
+<li><strong>Transformations</strong> (e.g., <code>map</code>, <code>filter</code>, <code>select</code>) build a logical plan but do not execute immediately.</li>
+<li><strong>Actions</strong> (e.g., <code>show</code>, <code>count</code>, <code>collect</code>, <code>save</code>) trigger execution of the DAG.</li>
 </ul>
+<p>This allows Spark to optimize the workflow before running it.</p>
 <hr />
-<h2 id="hadoop-vs-spark-context-for-next-topic">Hadoop vs. Spark (Context for Next Topic)</h2>
+<h2 id="getting-started-with-pyspark">Getting Started with PySpark</h2>
+<h3 id="creating-a-sparksession-pyspark">Creating a SparkSession (PySpark)</h3>
+<pre><code class="language-python">from pyspark.sql import SparkSession
+
+spark = SparkSession.builder \
+    .appName(&quot;BigDataCourseExample&quot;) \
+    .getOrCreate()
+</code></pre>
+<h3 id="reading-data-from-hdfs-or-local">Reading Data from HDFS (or Local)</h3>
+<pre><code class="language-python">df = spark.read.csv(&quot;hdfs:///bigdata/input.csv&quot;, header=True, inferSchema=True)
+df.printSchema()
+df.show(5)
+</code></pre>
+<hr />
+<h2 id="example-1-wordcount-with-rdds">Example 1 – WordCount with RDDs</h2>
+<p>This example mirrors the classic Hadoop MapReduce WordCount but using Spark RDDs.</p>
+<pre><code class="language-python">from pyspark.sql import SparkSession
+
+spark = SparkSession.builder.appName(&quot;WordCountRDD&quot;).getOrCreate()
+sc = spark.sparkContext
+
+rdd = sc.textFile(&quot;hdfs:///bigdata/input.txt&quot;)
+
+word_counts = (
+    rdd.flatMap(lambda line: line.split())
+       .map(lambda w: (w, 1))
+       .reduceByKey(lambda a, b: a + b)
+)
+
+for word, count in word_counts.take(10):
+    print(word, count)
+
+spark.stop()
+</code></pre>
+<p>Key points:
+- The code is shorter than the MapReduce version.
+- No need to write explicit mapper and reducer scripts.
+- The computation is expressed in a functional style.</p>
+<hr />
+<h2 id="example-2-aggregations-with-dataframes">Example 2 – Aggregations with DataFrames</h2>
+<pre><code class="language-python">from pyspark.sql import SparkSession
+from pyspark.sql.functions import col, avg
+
+spark = SparkSession.builder.appName(&quot;DataFrameAggregations&quot;).getOrCreate()
+
+df = spark.read.csv(&quot;hdfs:///bigdata/sensor_data.csv&quot;,
+                    header=True, inferSchema=True)
+
+summary = (
+    df.groupBy(&quot;sensor_id&quot;)
+      .agg(avg(col(&quot;value&quot;)).alias(&quot;avg_value&quot;))
+)
+
+summary.show(10)
+
+spark.stop()
+</code></pre>
+<p>This example shows:
+- Loading structured data.
+- Grouping and aggregating using the DataFrame API.
+- Letting Spark optimize the query via Catalyst.</p>
+<hr />
+<h2 id="caching-and-performance">Caching and Performance</h2>
+<p>Repeatedly using the same DataFrame or RDD can be expensive. Spark allows caching:</p>
+<pre><code class="language-python">df = spark.read.parquet(&quot;hdfs:///bigdata/large_dataset.parquet&quot;)
+
+df.cache()
+df.count()      # triggers computation and caching
+df.filter(df.value &gt; 0).show()
+</code></pre>
+<p>Caching is useful in:
+- Iterative algorithms (e.g., machine learning)
+- Interactive analysis (e.g., notebooks)</p>
+<p>Performance tips:
+- Prefer DataFrames over RDDs when possible.
+- Use appropriate file formats (Parquet, ORC).
+- Avoid unnecessary <code>collect()</code> on large datasets.</p>
+<hr />
+<h2 id="spark-vs-hadoop-mapreduce">Spark vs. Hadoop MapReduce</h2>
 <table>
 <thead>
 <tr>
@@ -1580,38 +1544,71 @@ if current:
 </thead>
 <tbody>
 <tr>
-<td>Processing Model</td>
-<td>Disk-based</td>
-<td>In‑memory</td>
+<td>Execution</td>
+<td>Disk-based between stages</td>
+<td>In-memory between stages</td>
 </tr>
 <tr>
 <td>Speed</td>
-<td>Slower</td>
-<td>Up to 100× faster</td>
+<td>Generally slower</td>
+<td>Often much faster</td>
 </tr>
 <tr>
-<td>API</td>
-<td>Low-level</td>
-<td>High-level (RDD, DataFrames)</td>
+<td>Programming Model</td>
+<td>Map + Reduce</td>
+<td>Rich APIs: RDD, DataFrames, SQL, ML, Streaming</td>
 </tr>
 <tr>
-<td>Use Cases</td>
-<td>Large batch jobs</td>
-<td>Batch + streaming + ML</td>
+<td>Workloads</td>
+<td>Batch</td>
+<td>Batch, streaming, iterative algorithms</td>
 </tr>
 </tbody>
 </table>
-<p>Modern architectures often use:
-- <strong>HDFS for storage</strong>
-- <strong>Spark as the compute engine</strong></p>
+<p>In modern Big Data architectures:
+- <strong>HDFS (or another distributed store)</strong> provides storage.
+- <strong>Spark</strong> is the main processing engine.</p>
+<hr />
+<h2 id="simple-streaming-example-structured-streaming-conceptual">Simple Streaming Example (Structured Streaming – Conceptual)</h2>
+<p>A minimal example of processing a stream of data (e.g., logs or sensor values):</p>
+<pre><code class="language-python">from pyspark.sql import SparkSession
+from pyspark.sql.functions import split, explode
+
+spark = SparkSession.builder.appName(&quot;StructuredStreamingExample&quot;).getOrCreate()
+
+lines = spark.readStream.format(&quot;socket&quot;) \
+    .option(&quot;host&quot;, &quot;localhost&quot;) \
+    .option(&quot;port&quot;, 9999) \
+    .load()
+
+words = lines.select(
+    explode(
+        split(lines.value, &quot; &quot;)
+    ).alias(&quot;word&quot;)
+)
+
+word_counts = words.groupBy(&quot;word&quot;).count()
+
+query = word_counts.writeStream \
+    .outputMode(&quot;complete&quot;) \
+    .format(&quot;console&quot;) \
+    .start()
+
+query.awaitTermination()
+</code></pre>
+<p>This example illustrates:
+- Reading from a streaming source.
+- Applying the same DataFrame operations used in batch mode.
+- Continuously updating results in the console.</p>
 <hr />
 <h2 id="summary">Summary</h2>
-<p>Hadoop provides the foundation for scalable, fault-tolerant storage and processing.<br />
-Its relevance today is strongest in:
-- Distributed storage (HDFS)
-- Legacy batch workloads
-- Infrastructure for Spark clusters</p>
-<p>Hadoop remains an essential conceptual framework for understanding Big Data systems.</p>
+<p>Spark is a powerful, general-purpose engine for Big Data processing that:</p>
+<ul>
+<li>Provides fast, in-memory analytics.</li>
+<li>Offers high-level APIs (DataFrames, SQL, MLlib, Structured Streaming).</li>
+<li>Integrates seamlessly with HDFS and other storage systems.</li>
+</ul>
+<p>Understanding Spark is essential for modern data engineering and data science workflows.</p>
 
 
 
