@@ -130,7 +130,6 @@ Students can:
 - Process files of increasing sizes (e.g., 1 GB → 5 GB → 10 GB)    
 - Measure execution time   
 - Analyze:
-<br>
 
   - Impact of block size
   - Network overhead during shuffle
