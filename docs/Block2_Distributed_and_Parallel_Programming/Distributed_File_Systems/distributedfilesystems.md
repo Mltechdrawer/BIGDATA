@@ -76,7 +76,7 @@ Frameworks aim to schedule tasks near the data to reduce network cost.
 
 ## Real-World Applications
 
-- Hadoop and Spark ecosystems    
+- [Hadoop](hadoop.md "Hadoop") and [Spark](spark.md "Spark") ecosystems    
 - High-performance computing    
 - Machine learning pipelines    
 - Scientific workflows    
