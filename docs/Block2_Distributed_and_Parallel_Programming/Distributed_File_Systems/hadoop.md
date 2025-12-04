@@ -51,13 +51,13 @@ If a DataNode fails, HDFS reconstructs missing replicas automatically.
 MapReduce structures processing into two main steps:
 
 ### **Map Phase**
-Takes input data and transforms it into intermediate key-value pairs.
+Takes input data and transforms it into intermediate key-value pairs.  
 
 ### **Shuffle Phase**
-Redistributes intermediate data to group identical keys.
+Redistributes intermediate data to group identical keys.  
 
 ### **Reduce Phase**
-Aggregates or processes all values associated with a key.
+Aggregates or processes all values associated with a key.  
 
 ---
 
@@ -129,11 +129,11 @@ Students can:
 
 - Process files of increasing sizes (e.g., 1 GB → 5 GB → 10 GB)    
 - Measure execution time   
-- Analyze:
+- Analyze:  
 
-  - Impact of block size
-  - Network overhead during shuffle
-  - Influence of slow nodes (stragglers)
+  - Impact of block size  
+  - Network overhead during shuffle  
+  - Influence of slow nodes (stragglers)  
 
 ---
 
@@ -153,10 +153,10 @@ Modern architectures often use:
 
 ## Summary
 Hadoop provides the foundation for scalable, fault-tolerant storage and processing.  
-Its relevance today is strongest in:
-- Distributed storage (HDFS)
-- Legacy batch workloads
-- Infrastructure for Spark clusters
+Its relevance today is strongest in:  
+- Distributed storage (HDFS)  
+- Legacy batch workloads  
+- Infrastructure for Spark clusters  
 
 Hadoop remains an essential conceptual framework for understanding Big Data systems.
 

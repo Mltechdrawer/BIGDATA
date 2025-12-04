@@ -95,10 +95,10 @@ for word, count in word_counts.take(10):
 spark.stop()
 ```
 
-Key points:
-- The code is shorter than the MapReduce version.
-- No need to write explicit mapper and reducer scripts.
-- The computation is expressed in a functional style.
+Key points:  
+- The code is shorter than the MapReduce version.  
+- No need to write explicit mapper and reducer scripts.  
+- The computation is expressed in a functional style.  
 
 ---
 
@@ -123,10 +123,10 @@ summary.show(10)
 spark.stop()
 ```
 
-This example shows:
-- Loading structured data.
-- Grouping and aggregating using the DataFrame API.
-- Letting Spark optimize the query via Catalyst.
+This example shows:  
+- Loading structured data.  
+- Grouping and aggregating using the DataFrame API.  
+- Letting Spark optimize the query via Catalyst.  
 
 ---
 
@@ -142,14 +142,14 @@ df.count()      # triggers computation and caching
 df.filter(df.value > 0).show()
 ```
 
-Caching is useful in:
-- Iterative algorithms (e.g., machine learning)
-- Interactive analysis (e.g., notebooks)
+Caching is useful in:  
+- Iterative algorithms (e.g., machine learning)  
+- Interactive analysis (e.g., notebooks)  
 
-Performance tips:
-- Prefer DataFrames over RDDs when possible.
-- Use appropriate file formats (Parquet, ORC).
-- Avoid unnecessary `collect()` on large datasets.
+Performance tips:  
+- Prefer DataFrames over RDDs when possible.  
+- Use appropriate file formats (Parquet, ORC).  
+- Avoid unnecessary `collect()` on large datasets.  
 
 ---
 
