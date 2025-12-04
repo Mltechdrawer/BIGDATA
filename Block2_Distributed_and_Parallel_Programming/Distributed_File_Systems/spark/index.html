@@ -978,236 +978,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Application Development for Big Data Clusters
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_4">
-            <span class="md-nav__icon md-icon"></span>
-            Application Development for Big Data Clusters
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Application_Development_for_Big_Data_Clusters/experiments/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Experiments
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Application_Development_for_Big_Data_Clusters/lectures/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Lectures
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Application_Development_for_Big_Data_Clusters/applications/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Applications
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Map Reduce
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_5">
-            <span class="md-nav__icon md-icon"></span>
-            Map Reduce
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Map_Reduce/experiments/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Experiments
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Map_Reduce/lectures/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Lectures
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Map_Reduce/applications/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Applications
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1489,10 +1259,10 @@ for word, count in word_counts.take(10):
 
 spark.stop()
 </code></pre>
-<p>Key points:
-- The code is shorter than the MapReduce version.
-- No need to write explicit mapper and reducer scripts.
-- The computation is expressed in a functional style.</p>
+<p>Key points:<br />
+- The code is shorter than the MapReduce version.<br />
+- No need to write explicit mapper and reducer scripts.<br />
+- The computation is expressed in a functional style.  </p>
 <hr />
 <h2 id="example-2-aggregations-with-dataframes">Example 2 – Aggregations with DataFrames</h2>
 <pre><code class="language-python">from pyspark.sql import SparkSession
@@ -1512,10 +1282,10 @@ summary.show(10)
 
 spark.stop()
 </code></pre>
-<p>This example shows:
-- Loading structured data.
-- Grouping and aggregating using the DataFrame API.
-- Letting Spark optimize the query via Catalyst.</p>
+<p>This example shows:<br />
+- Loading structured data.<br />
+- Grouping and aggregating using the DataFrame API.<br />
+- Letting Spark optimize the query via Catalyst.  </p>
 <hr />
 <h2 id="caching-and-performance">Caching and Performance</h2>
 <p>Repeatedly using the same DataFrame or RDD can be expensive. Spark allows caching:</p>
@@ -1525,13 +1295,13 @@ df.cache()
 df.count()      # triggers computation and caching
 df.filter(df.value &gt; 0).show()
 </code></pre>
-<p>Caching is useful in:
-- Iterative algorithms (e.g., machine learning)
-- Interactive analysis (e.g., notebooks)</p>
-<p>Performance tips:
-- Prefer DataFrames over RDDs when possible.
-- Use appropriate file formats (Parquet, ORC).
-- Avoid unnecessary <code>collect()</code> on large datasets.</p>
+<p>Caching is useful in:<br />
+- Iterative algorithms (e.g., machine learning)<br />
+- Interactive analysis (e.g., notebooks)  </p>
+<p>Performance tips:<br />
+- Prefer DataFrames over RDDs when possible.<br />
+- Use appropriate file formats (Parquet, ORC).<br />
+- Avoid unnecessary <code>collect()</code> on large datasets.  </p>
 <hr />
 <h2 id="spark-vs-hadoop-mapreduce">Spark vs. Hadoop MapReduce</h2>
 <table>
