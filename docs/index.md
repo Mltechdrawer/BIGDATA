@@ -20,9 +20,9 @@ The learning approach emphasises **individual and team work**, fostering the abi
 - María Dolores Afonso Suárez. Course Coordinator  
 
 
-<a href="files/PDA_GCID_40386 - BIG DATA_26-27.pdf" target="_blank"><img src="https://img.shields.io/badge/PDA-2025%2F26-blue" alt="badge"/></a>
+<a href="files/PDA_GCID_40386 - BIG DATA_26-27.pdf" target="_blank"><img src="https://img.shields.io/badge/PDA-2026%2F27-blue" alt="badge"/></a>
 
-<a href="files/BD Presentation 2026-2027.pdf" target="_blank"><img src="https://img.shields.io/badge/Presentation-2025%2F26-blue" alt="badge"/></a>
+<a href="files/BD Presentation 2026-2027.pdf" target="_blank"><img src="https://img.shields.io/badge/Presentation-2026%2F27-blue" alt="badge"/></a>
 
 <a href="https://www.ulpgc.es" target="_blank">
   <img src="https://img.shields.io/badge/ULPGC-University-blue" alt="ULPGC">
