@@ -20,9 +20,9 @@ The learning approach emphasises **individual and team work**, fostering the abi
 - María Dolores Afonso Suárez. Course Coordinator  
 
 
-<a href="files/PDA_gcid_40386_bd_2025_2026.pdf" target="_blank"><img src="https://img.shields.io/badge/PDA-2025%2F26-blue" alt="badge"/></a>
+<a href="files/PDA_GCID_40386 - BIG DATA_26-27.pdf" target="_blank"><img src="https://img.shields.io/badge/PDA-2025%2F26-blue" alt="badge"/></a>
 
-<a href="files/BD Presentation 2025-2026.pdf" target="_blank"><img src="https://img.shields.io/badge/Presentation-2025%2F26-blue" alt="badge"/></a>
+<a href="files/BD Presentation 2026-2027.pdf" target="_blank"><img src="https://img.shields.io/badge/Presentation-2025%2F26-blue" alt="badge"/></a>
 
 <a href="https://www.ulpgc.es" target="_blank">
   <img src="https://img.shields.io/badge/ULPGC-University-blue" alt="ULPGC">
@@ -34,5 +34,4 @@ The learning approach emphasises **individual and team work**, fostering the abi
   <img src="https://img.shields.io/badge/DIS-Department-blue" alt="DIS">
 </a>
 
-**© 2025 María Dolores Afonso Suárez.** Este material se distribuye bajo licencia
-[Creative Commons Atribución 4.0 Internacional (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.es).
+**© 2025 María Dolores Afonso Suárez, José Juan Hernández, José Évora Gómez** Este material se distribuye bajo licencia [Creative Commons Atribución 4.0 Internacional (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.es).
