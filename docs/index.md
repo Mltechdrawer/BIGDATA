@@ -34,4 +34,4 @@ The learning approach emphasises **individual and team work**, fostering the abi
   <img src="https://img.shields.io/badge/DIS-Department-blue" alt="DIS">
 </a>
 
-**© 2025 María Dolores Afonso Suárez, José Juan Hernández, José Évora Gómez** Este material se distribuye bajo licencia [Creative Commons Atribución 4.0 Internacional (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.es).
+**© María Dolores Afonso Suárez, José Juan Hernández, José Évora Gómez** Contenidos bajo licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es): se permite su uso y adaptación con atribución, sin fines comerciales y manteniendo la misma licencia.
