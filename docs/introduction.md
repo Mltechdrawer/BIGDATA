@@ -10,7 +10,7 @@
 The journey of Big Data starts with the evolution of computing itself:
 
 - **1950s**: John von Neumann formalized computer architecture, setting the basis for digital computation. At the same time, advances in **numerical algorithms** and **game theory** influenced how data and complexity would be modeled.  
-- **1960s–1970s**: Paul Eisler’s printed circuit boards and John Bardeen’s transistor discoveries paved the way for miniaturization. Jack Kilby’s microchip and Douglas Engelbart’s vision of interactive computing changed how people interacted with technology.  
+- **1960s–1970s**: Advances such as the transistor, printed circuit boards, and integrated circuits paved the way for increasingly smaller, faster, and more affordable computers. Developments by researchers such as John Bardeen, Walter Brattain, William Shockley, Jack Kilby, and Douglas Engelbart helped transform computing from specialized machines into increasingly accessible and interactive systems.  
 - **1980s–1990s**: Ted Nelson conceptualized **hypertext**, Robert Metcalfe created **Ethernet**, and Tim Berners-Lee at CERN invented the **World Wide Web**, democratizing access to global information. Alan Kay and Engelbart further advanced the idea of graphical user interfaces (GUI).  
 - **2000s**: Complex systems modeling, network growth, and ubiquitous devices fueled an explosion of data that set the stage for the **Big Data era**.
 
@@ -59,11 +59,11 @@ This unimaginable scale is equivalent to millions of modern hard drives, highlig
 
 ![Data lake, data warehouse, data lakehouse](files/dldwdl_2.png "Data lake, data warehouse, data lakehouse")
 
-- **Data Lake**: Centralized repository that stores raw, unstructured, and semi-structured data. Highly flexible, but lacks governance and fast querying.  
+- **Data Lake**: Centralized repository that stores raw, unstructured, and semi-structured data. Highly flexible, but may require additional mechanisms for governance and efficient querying.  
 - **Data Warehouse**: Structured, schema-based system optimized for analytics and business intelligence (BI). Enforces **ACID** transactions and strong data consistency.  
 - **Data Lakehouse**: Hybrid architecture combining the scalability of lakes with the reliability of warehouses. Supports both raw and structured data, ACID compliance, and efficient queries.  
 
-The **Lakehouse** approach is becoming the standard in modern Big Data platforms.
+The **Lakehouse** approach has become increasingly relevant in modern platforms.
 
 ![Data lake, data warehouse, data lakehouse](files/dldwdl_1.png "Data lake, data warehouse, data lakehouse")
 
@@ -80,7 +80,7 @@ Recent and emerging trends shaping Big Data include:
 5. Integration of **AI and machine learning** into data platforms.  
 6. Big Data applications in **healthcare and medicine**.  
 7. **Data democratization** and self-service analytics.  
-8. **Data lakes** and **lakehouses** as dominant architectures.  
+8. **Data lakes** and **lakehouses** as growing adoption.  
 9. Advances in **Natural Language Processing (NLP)** for text and speech.  
 10. **Quantum computing** as a future enabler of large-scale analytics.  
 11. Big Data for **sustainability and climate change**.  
