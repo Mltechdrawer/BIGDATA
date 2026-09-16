@@ -116,7 +116,7 @@ The image represents the TIOBE Programming Community Index, which measures the r
 ## EXERCISE 1 Complexity Experiment
 Given the matrix multiplication algorithm, how would you optimize the storage and management of the input data to improve the efficiency of the computation? Consider both memory access patterns and the use of specialized data structures.
 
-[Solution](Exercise1_Complexity.pdf)
+Solution
 
 ---
 
